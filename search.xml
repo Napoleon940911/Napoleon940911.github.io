@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>template-01：目录</title>
+      <link href="template-1/"/>
+      <url>template-1/</url>
+      
+        <content type="html"><![CDATA[<center>    <font size=4>        【配套<font color='red'><strong>源码</strong></font>、<font color='red'><strong>文档</strong></font>、<font color='red'><strong>软件</strong></font>、<font color='red'><strong>硬件</strong></font>等资源，请移步技术交流群：<font color='red'><strong>拿破仑ZigBee</strong></font>（263671349）】    </font></center><p>&nbsp;</p><p>本专题的目录安排如下：</p><ul><li>（点击链接-&gt;）<a href="https://oceanwang.top/template-1/">template-01：目录</a></li></ul><p><img src="%E6%8B%BF%E7%A0%B4%E4%BB%91ZigBee.jpg"></p><center>    <font size=4>        【配套<font color='red'><strong>源码</strong></font>、<font color='red'><strong>文档</strong></font>、<font color='red'><strong>软件</strong></font>、<font color='red'><strong>硬件</strong></font>等资源，请移步技术交流群：<font color='red'><strong>拿破仑ZigBee</strong></font>（263671349）】    </font></center>]]></content>
+      
+      
+      <categories>
+          
+          <category> template </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> template </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>信息与通信工程-03：双工方式FDD、TDD之间的区别</title>
+      <link href="info-and-comm-engi-3/"/>
+      <url>info-and-comm-engi-3/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、双工方式"><a href="#一、双工方式" class="headerlink" title="一、双工方式"></a>一、双工方式</h1><p>双工方式中的“双”可以类比通话中的两个手机，“工”表示工作方式。双工方式分为半双工和全双工，全双工又分为时分双工和频分双工。电流在导体里某一时刻是单向传输的，手机发送的电磁波也一样，它在空气里的某一时刻也是单向传输的。</p><h2 id="1-1-半双工"><a href="#1-1-半双工" class="headerlink" title="1.1 半双工"></a>1.1 半双工</h2><p>半双工就像对讲机，小红说“完毕”，小黑说，小黑说“完毕”，小红说……，就是说通话双方轮流说话，这就叫“半”。</p><p>小红与小黑之间只有一个车道，“小红的话”出发，经过车道到达小黑后，“小黑的话”才出发，要不然就像过独木桥一样要撞车。</p><h2 id="1-2-全双工"><a href="#1-2-全双工" class="headerlink" title="1.2 全双工"></a>1.2 全双工</h2><p>全双工就像打电话，小红和小黑可以同时一起说，这就叫“全”。</p><ul><li><p><strong>FDD-频分双工</strong>：小红和小黑之间不是单车道了，而成了双车道，所以小红和小黑就可以同时说话了。</p></li><li><p><strong>TDD-时分双工</strong>：小红和小黑之间还是单车道，但“小红的话”和“小黑的话”不是车了，变成火箭了，它们轮流说话，但间隔非常非常小，耳朵感觉不到这个间断，所以仍然感觉是在同时通话。</p></li></ul><h1 id="二、多址vs双工"><a href="#二、多址vs双工" class="headerlink" title="二、多址vs双工"></a>二、多址vs双工</h1><p>不要混淆多址方式和双工方式。</p><ul><li><p><strong>多址方式</strong>：目的是让同一个房间里所有人都可以同时一起通话，而不是每时每刻只能一个用户。</p></li><li><p><strong>双工方式</strong>：目的是让一通电话两端的小红和小黑同时发言，而不是让小黑和小红轮流发言。</p></li></ul><h1 id="三、WCDMA-vs-TD-SCDMA"><a href="#三、WCDMA-vs-TD-SCDMA" class="headerlink" title="三、WCDMA vs TD-SCDMA"></a>三、WCDMA vs TD-SCDMA</h1><p>WCDMA和TD-SCDMA的共性是多址方式都用到了CDMA，最主要的区别是双工方式不同。</p><p>WCDMA是FDD（频分双工），TD-SCDMA是TDD（时分双工）。</p><h2 id="3-1-WCDMA"><a href="#3-1-WCDMA" class="headerlink" title="3.1 WCDMA"></a>3.1 WCDMA</h2><p><strong>中国联通</strong>用的是WCDMA，W表示宽带的意思，宽带就是占用更多车道的意思，双工方式是FDD（频分双工）。WCDMA中的“址”是频率F和扩频码字C共同决定的。</p><h2 id="3-2-TD-SCDMA"><a href="#3-2-TD-SCDMA" class="headerlink" title="3.2 TD-SCDMA"></a>3.2 TD-SCDMA</h2><p><strong>中国移动</strong>用的是TD-SCDMA，TD表示双工方式是TDD（时分双工），S表示同步，CDMA表示多址方式是码分多址。实际中TD-SCDMA中的“址”是由时间T、频率F和扩频码字C共同决定的。</p><p>此外，注意是TD-SCDMA，读的时候不要顿成TDS-CDMA。同步S过于复杂，入门者不必操心。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> info and comm engi </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Information </tag>
+            
+            <tag> Communication </tag>
+            
+            <tag> 双工方式 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>信息与通信工程-02：多址方式FDMA、TDMA、CDMA之间的区别</title>
+      <link href="info-and-comm-engi-2/"/>
+      <url>info-and-comm-engi-2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、多址方式概述"><a href="#一、多址方式概述" class="headerlink" title="一、多址方式概述"></a>一、多址方式概述</h1><p>在无线通信系统中，多用户同时通过同一个基站和其他用户进行通信，必须对不同用户和基站发出的信号赋予不同特征。这些特征使基站从众多手机发射的信号中，区分出是哪一个用户的手机发出来的信号；各用户的手机能在基站发出的信号中，识别出哪一个是发给自己的信号。</p><p>在无线通信系统中，使用多址方式寻址。“多”表示多个用户可以同时通信；“址”指的是按照时间T、频率F和扩频码字C来共同区分的用户的地址。</p><p>比如同一个办公室里的小红和小黑可以同时打电话，之所以不是轮流打，是因为通信网络给同时打电话的小红和小黑都分配了不同的地址，这样接收手机信号的基站就能通过地址这个标识把小红和小黑区分出来了。如果没有多址方式，小红和小黑的信号的混在一起了分不开了。</p><p>常用的多址技术主要有：FDMA（频分多址）、TDMA（时分多址）、CDMA（码分多址）。其中，D表示分，M表示多，A表示址。从效果上看三种方式等价，这个效果就是同一办公室的人们都可以同时打电话。</p><h1 id="二、常用的多址技术"><a href="#二、常用的多址技术" class="headerlink" title="二、常用的多址技术"></a>二、常用的多址技术</h1><h2 id="2-1-FDMA-频分多址"><a href="#2-1-FDMA-频分多址" class="headerlink" title="2.1 FDMA-频分多址"></a>2.1 FDMA-频分多址</h2><p>FDMA（频分多址），将总频段划分为不同的小频道分配给不同的用户，让不同的用户占用不同频率的信道进行通信。因为各个用户使用着不同频率的信道，所以相互没有干扰。早期的移动通信就是采用这个技术。</p><p>优点：简单，易实现，技术成熟，对信号功率控制要求不高；<br>缺点：频率利用率低，容量小，基站需要多部不同载波频率发射机同时工作，容易造成同频干扰。</p><p><img src="FDMA.jpg"></p><p>FDMA（频分多址）就好比把聚会大厅分成一个个小房间，房间里面的双方可以很清楚的听到对方讲话，但是这种方式的缺点也很明显，就是房间数有限，能够容纳的客人太少了。</p><p>大家的手机在不同的频率上给基站同时发送信号，就像是各自在不同的车道上行驶，互不干扰。</p><p>FDMA（频分多址）的“址”就是分配给用户的不同频率。</p><h2 id="2-2-TDMA-时分多址"><a href="#2-2-TDMA-时分多址" class="headerlink" title="2.2 TDMA-时分多址"></a>2.2 TDMA-时分多址</h2><p>TDMA（时分多址），将时间段划分为小时隙，分配给不同的用户。这种多址技术是让多用户使用同一个信道，但是我们把一个载波在不同的时间上进行切片，分成不同的时隙给各个用户使用。由于占用的时间不同，所以相互之间不会干扰。显然，在相同信道数的情况下，TDMA要比FDMA能容纳更多的用户。</p><p>优点：容量大，频率利用率高；<br>缺点：技术复杂，严格的同步要求。</p><p>TDMA通信系统和FDMA通信系统相比具有以下主要特点：<br>（1）TDMA通信系统的基站只用一部发射机，可以避免FDMA通信系统多部不同频率发射机同时工作而产生的互调干扰；<br>（2）TDMA通信系统不存在频率分配问题，对时隙的管理和分配比对频率的管理和分配简单而经济；<br>（3）移动台只在指定的时隙中接收信息，有利于通信网络的控制和管理，可保证移动台的越区切换功能可靠的实现；<br>（4）可同时提供多种业务，使系统的通信容量和通信速率成倍地增长；<br>（5）TDMA通信系统具有精确的定时和同步功能，可保证各移动台发送的信号不会在基站发生重叠和混淆。</p><p><img src="TDMA.jpg"></p><p>TDMA（时分多址）就好比所有人都在同一个房间里，但是规定房间里的每个人只能连续讲10分钟的话，超过10分钟就要让给下一个人，等下次轮到你了，你再占用这个房间讲话。通过这种方式，可以有更多的人参加到聚会里来，只要间隔时间（例子中的10分钟）在可以忍受的范围内，那么就不会有什么问题；</p><p>大家的手机轮流给基站发送信号，但是轮流的非常非常快，每个手机发送的时间只占1秒的几十万分之一，再加上手机的一些信号处理，人耳感觉不到轮流中等待的那段时间，感觉就像连续通话一样。</p><p>TDMA（时分多址）的“址”就是轮流分得的发送时间。</p><h2 id="2-3-CDMA-码分多址"><a href="#2-3-CDMA-码分多址" class="headerlink" title="2.3 CDMA-码分多址"></a>2.3 CDMA-码分多址</h2><p>CDMA（码分多址），不同的用户采用各自独立的编码序列。也是多个用户使用同一个信道。但是每个用户都被分配有一个独特的“码序列”，与所有别的“码序列”都不相同且正交，所以各个用户相互之间也没有干扰。因为是靠不同的“码序列”来区分不同的用户，所以叫做“码分多址”。CDMA可以比TDMA容纳更多的用户。</p><p>优点：容量最大，频率利用率高，质量好。背景噪声受限的系统，软容量。<br>缺点：起步太晚，用户群体少。</p><p>CDMA系统的特点总结如下：<br>（1）容量大；<br>（2）软容量（背景噪音受限的系统）；<br>（3）软切换；<br>（4）话音激活技术，以提高系统的通信容量；<br>（5）CDMA蜂窝通信系统的功率控制；<br>（6）CDMA蜂窝系统以扩频技术为基础，因而它具有扩频通信系统所固有的优点（抗干扰、抗多径、隐蔽、保密和多址能力）。</p><p><img src="CDMA.jpg"></p><p>CDMA（码分多址）也是好比所有人都在同一个房间里。但是，你和张三说中国话，alice和bob说英文，cici和coco说意大利语，虽然大家都叽叽喳喳的说着话，但是你还是可以很清楚的听明白张三说的什么，因为你只能听懂中国话，听不懂英文和意大利语，就把其他语言当成噪音直接过滤掉了。</p><p>大家发送信号前，给自己的信号上加个扩频码字，基站接收到大家一起发来的信号后，通过扩频码字就能分辨出谁是小红、谁是小黑。扩频的意思的大大增加了传送的数据量，需要扩展车道，这是因为大家发送数据时给每个数据都额外加上了这个扩频码字，所以要用更宽的车道来传。</p><p>CDMA（码分多址）的“址”就是标识用户的扩频码字。</p><h2 id="2-4-实际应用"><a href="#2-4-实际应用" class="headerlink" title="2.4 实际应用"></a>2.4 实际应用</h2><p>在实际中，并不一定仅由时间T、频率F或扩频码字C中的一个因素就决定用户的地址，可能是一个或是多个因素一起决定。</p><p>就像小红在指定车道上开着贴着自己车牌（扩频码字）的车，这就叫FDMA-CDMA，这样混合的优点是能让系统容纳更多的用户。当然单一因素也是可以的，只是系统用户容量会小一些。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> info and comm engi </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Information </tag>
+            
+            <tag> Communication </tag>
+            
+            <tag> 多址方式 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>信息与通信工程-01：目录</title>
+      <link href="info-and-comm-engi-1/"/>
+      <url>info-and-comm-engi-1/</url>
+      
+        <content type="html"><![CDATA[<p>本专题的目录安排如下：</p><ul><li>（点击链接-&gt;）<a href="https://oceanwang.top/info-and-comm-engi-1/">信息与通信工程-01：目录</a></li><li>（点击链接-&gt;）<a href="https://oceanwang.top/info-and-comm-engi-2/">信息与通信工程-02：多址方式FDMA、TDMA、CDMA之间的区别</a></li><li>（点击链接-&gt;）<a href="https://oceanwang.top/info-and-comm-engi-3/">信息与通信工程-03：双工方式FDD、TDD之间的区别</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> info and comm engi </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Information </tag>
+            
+            <tag> Communication </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ZigBee 3.0学习教程-06：基础知识-建网与组网</title>
+      <link href="zigbee-3.0-6/"/>
+      <url>zigbee-3.0-6/</url>
+      
+        <content type="html"><![CDATA[<center>    <font size=4>        【配套<font color='red'><strong>源码</strong></font>、<font color='red'><strong>文档</strong></font>、<font color='red'><strong>软件</strong></font>、<font color='red'><strong>硬件</strong></font>等资源，请移步技术交流群：<font color='red'><strong>拿破仑ZigBee</strong></font>（263671349）】    </font></center><h1 id="一、创建网络"><a href="#一、创建网络" class="headerlink" title="一、创建网络"></a>一、创建网络</h1><p>首先，由协调器创建一个网络，您必须准备4个参数：</p><ul><li>PAN ID</li><li>扩展 PAN ID</li><li>工作频道</li><li>发射功率</li></ul><p>您需要指定这四个参数。如果您不这样做，协调器将随机选择一个PAN ID和一个扩展的PAN ID。如果您未指定频道，则协调器将扫描并选择一个相对安静的频道进行工作。</p><h1 id="二、加入网络"><a href="#二、加入网络" class="headerlink" title="二、加入网络"></a>二、加入网络</h1><h2 id="2-1-使用Well-Known-Link-Key加入"><a href="#2-1-使用Well-Known-Link-Key加入" class="headerlink" title="2.1 使用Well-Known Link Key加入"></a>2.1 使用Well-Known Link Key加入</h2><p><img src="Joining-with-Well-Known-Link-Key.png"></p><p>网络创建后，新设备可以开始加入。</p><ol><li>新设备将开始查找可连接的网络。在此阶段，新设备不知道可加入的网络处于哪个信道，所以它将通过扫描的方式来发现可加入的网络。它将在每个信道上都发送Beacon Request，等待一会儿如果没有回应的话，就跳到下一个信道继续发Beacon Request。</li><li>路由器和协调器将使用Beacon中携带的网络信息来响应Beacon Request。这些信息包括PAN ID，扩展PAN ID以及路由器或协调器的其他一些属性，例如设备是否允许连接，设备是否具有允许新设备连接的能力。</li><li>新设备可以从不同设备接收多个Beacon。它将选择信号质量最好的一个，并开始发送Association Request。在该Association Request中，将PAN ID设置为所选的PAN，并将目标节点ID设置为所选设备的节点ID。在这个报文里面，将会携带这个新设备的设备类型等信息。</li><li>当路由器或协调器收到此Association Request时，它将为新设备选择一个节点ID，并以Association Response进行响应。然后，新设备获得了其Node ID，但由于未获得Network Key而无法与其他节点通信。</li><li>协调器会将当前的Network Key传输到新设备。<strong>该传输消息在应用程序层中使用Well-Known Link Key加密</strong>。</li><li>当新设备收到此消息时，<strong>它将使用Well-Known Link Key对消息解密并获取Network Key</strong>。之后，该设备实际上已加入网络，并能够与网络中的所有其他节点通信。</li><li>设备将发送一条Device Announce，以通知网络的其他节点，以通知他们我已加入。</li></ol><h2 id="2-2-使用Install-Code-Derived-Link-Key加入"><a href="#2-2-使用Install-Code-Derived-Link-Key加入" class="headerlink" title="2.2 使用Install Code Derived Link Key加入"></a>2.2 使用Install Code Derived Link Key加入</h2><p><img src="Joining-with-Install-Code.png"></p><ol><li>在出厂之前，应该已经将Install Code烧录到新设备里面了。</li><li>在加入之前，用户需要获取新设备的Install Code和Eui64，然后在协调器上对其进行配置。</li><li>然后，协调器从Install Code中获取Link Key，并将协调器设置为使用此Link Key来加密此新设备的传输Network Key消息。</li><li><strong>当协调器开始将Network Key传输到新设备时，它将对消息使用Install Code Derived Link Key进行加密并将其传输到新设备</strong>。</li><li>当新设备收到此消息时，<strong>它将从闪存中读取Install Code并计算得出应和协调器端相同的Link Key，然后使用此密钥对消息进行解密并获取Network Key。</strong></li></ol><p>其余过程类似于使用Well-Known Link Key进行组网的过程。</p><p><img src="%E6%8B%BF%E7%A0%B4%E4%BB%91ZigBee.jpg"></p><center>    <font size=4>        【配套<font color='red'><strong>源码</strong></font>、<font color='red'><strong>文档</strong></font>、<font color='red'><strong>软件</strong></font>、<font color='red'><strong>硬件</strong></font>等资源，请移步技术交流群：<font color='red'><strong>拿破仑ZigBee</strong></font>（263671349）】    </font></center>]]></content>
+      
+      
+      <categories>
+          
+          <category> zigbee 3.0 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ZigBee 3.0 </tag>
+            
+            <tag> Z-Stack </tag>
+            
+            <tag> EmberZnet </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ZigBee 3.0学习教程-05：基础知识-安全加密</title>
+      <link href="zigbee-3.0-5/"/>
+      <url>zigbee-3.0-5/</url>
+      
+        <content type="html"><![CDATA[<center>    <font size=4>        【配套<font color='red'><strong>源码</strong></font>、<font color='red'><strong>文档</strong></font>、<font color='red'><strong>软件</strong></font>、<font color='red'><strong>硬件</strong></font>等资源，请移步技术交流群：<font color='red'><strong>拿破仑ZigBee</strong></font>（263671349）】    </font></center><h1 id="一、安全威胁"><a href="#一、安全威胁" class="headerlink" title="一、安全威胁"></a>一、安全威胁</h1><p>由于ZigBee是一种无线技术，因此安全性非常重要，因为黑客可以通过无线检测到这些数据包。想象您有一个智能门锁。如果黑客捕获了打开您的门的数据包，那么他可以重发该文件以打开您的门。这是很危险的。</p><p><img src="Security-Threats.png"></p><p>在ZigBee的网络里面，面临的两种最为典型的安全威胁：</p><ul><li>第一种是伪造。比如黑客捕获到无线报文，进行篡改之后，伪造一个假的报文，再发送到这个ZigBee网络中，从而去控制网络里的设备；</li><li>第二种是重播。捕获到这个报文后，不进行编辑，直接重新播放一下，</li></ul><p>为了防止这种情况发生，ZigBee定义了许多安全功能。下面将会做简要介绍。</p><h1 id="二、ZigBee安全"><a href="#二、ZigBee安全" class="headerlink" title="二、ZigBee安全"></a>二、ZigBee安全</h1><h2 id="2-1-加密流程"><a href="#2-1-加密流程" class="headerlink" title="2.1 加密流程"></a>2.1 加密流程</h2><p>APS层和网络层的加密流程，如下图所示：  </p><p><img src="APS-NWK-Security-0.png"></p><p>它显示了如何在网络层中保护不安全的网络帧：首先，网络有效负载将被加密。之后，将在加密的有效负载之前添加安全标头。然后根据网络标头，安全标头和加密的有效负载来计算哈希值。最后，将32位哈希值附加到帧的末尾。如果更改了网络标头，安全标头和加密的有效负载中的任何字节，则哈希值将不同。我们将此值称为MIC（mandatory integrity control），是消息完整性检查的缩写。</p><h2 id="2-2-加密算法"><a href="#2-2-加密算法" class="headerlink" title="2.2 加密算法"></a>2.2 加密算法</h2><p><img src="APS-NWK-Security-1.png"></p><p>APS层和网络层的两个加密环节使用的都是AES128对称加密算法，这意味着需要使用相同的密钥进行加密和解密。</p><h2 id="2-3-完整性检查"><a href="#2-3-完整性检查" class="headerlink" title="2.3 完整性检查"></a>2.3 完整性检查</h2><p><img src="APS-NWK-Security-2.png"></p><h2 id="2-4-重播攻击保护"><a href="#2-4-重播攻击保护" class="headerlink" title="2.4 重播攻击保护"></a>2.4 重播攻击保护</h2><p><img src="APS-NWK-Security-3.png"></p><p>添加了帧计数器以防止重发攻击。让我们看看它是如何工作的。</p><p><img src="Frame-Counter.png"></p><p>在发送方</p><ul><li>每发送一次Frame Counter的值都需要增加1；</li><li>Frame Counter的值需要保存在non-volatile memory中，便于重启后恢复Frame Counter。</li></ul><p>在接收方</p><ul><li>首先，将记录接收到帧的节点的Eui64和Frame Counter的值；</li><li>来自同一节点的下一条消息的Frame Counter必须大于记录的Frame Counter值。如果此次的Frame Counter比上一次的小或者相等，该消息都将被视为重发并将被丢弃；</li><li>由于资源有限，接收方只保存所有邻居的Frame Counter。</li></ul><p>由于Frame Counter是一个32位值，因此如果设备长时间保持运行状态，它可能会自动溢出。显然，如果帧计数器被覆盖，可能会出现问题。为防止这种情况发生，必须在溢出之前更新Network Key。如果更新了Network Key，帧计数器则可以再次从零开始。</p><p>对于End Device来说，它通常只需要保存其父节点的Frame Counter即可。</p><h1 id="三、APS层安全"><a href="#三、APS层安全" class="headerlink" title="三、APS层安全"></a>三、APS层安全</h1><h2 id="3-1-总览"><a href="#3-1-总览" class="headerlink" title="3.1 总览"></a>3.1 总览</h2><p>在APS层用来加密的密钥被称为Link key。在ZigBee网络中，虽然APS层和网络层都有加密，但是绝大部分通信都只是在网络层的加密。<br>一般来说，只有在传输Network Key的时候需要在应用层被加密，并且这仅在Trust Center和新设备之间发生。因此，在这种情况下，我们也将其称为Trust Center Link key。</p><p>新设备和Trust Center之间必须要在组网之前就使用哪一个Link Key达成共识，所以新设备和Trust Center之间是不需要一个Link Key的传输过程的。</p><p>网络中的设备可以使用相同的Link key或不同的Link key，只要新设备和Trust Center之间达成共识即可。</p><p>一般来说有四种Link Key，但是我们以前两种为主。后两种目前可能用得很少了，这里仅作简要描述，不做深入探讨。</p><h2 id="3-2-四种类型的Link-Key"><a href="#3-2-四种类型的Link-Key" class="headerlink" title="3.2 四种类型的Link Key"></a>3.2 四种类型的Link Key</h2><h3 id="3-2-1-Default-Global-Trust-Center-Link-Key"><a href="#3-2-1-Default-Global-Trust-Center-Link-Key" class="headerlink" title="3.2.1 Default Global Trust Center Link Key"></a>3.2.1 Default Global Trust Center Link Key</h3><p>又被称为the well-known link key，其内容如下：</p><p>Default global Trust Center link key (0:15) = 0x5a 0x69 0x67 0x42 0x65 0x65 0x41 0x6c 0x6c 0x69 0x61 0x6e 0x63 0x65 0x30 0x39</p><p>其实就是字符串“ <strong>ZigBeeAlliance09</strong> ”。这个是在ZigBee 3.0之前就一直在广泛使用的一个相同的默认的密钥，如今得以保留主要是为了保持向后的兼容性。</p><p>所有的ZigBee设备都会有这个Default Global Trust Center Link Key。如果没有指定其他的link key的话，Default Global Trust Center Link Key就是设备在入网过程中第一个被尝试使用的密钥。</p><p>如果希望能保证和其他的ZigBee 3.0的设备之间互联互通的话，这个密钥时不能改变的。</p><h3 id="3-2-2-Install-Code-Derived-Preconfigured-Link-Key"><a href="#3-2-2-Install-Code-Derived-Preconfigured-Link-Key" class="headerlink" title="3.2.2 Install Code Derived Preconfigured Link Key"></a>3.2.2 Install Code Derived Preconfigured Link Key</h3><p><img src="Install-Code-to-Key.png"></p><p>Install Code并不是一个Key，而是一个Key的输入。Install Code是16字节多项式+ 2字节CRC，再通过固定的算法，计算可以得出Link Key。这种Link Key的传输是由人工来完成的，Install Code的实际应用场景如下图所示：</p><p><img src="Install-Code.png"></p><ul><li>首先，在产品生产的时候，由厂家在产线随机生成一个Install Code；</li><li>然后将这个Install Code烧录到产品里面；</li><li>然后把这个Install Code和Eui64打到标签上面，贴在这个产品表面；</li><li>在安装的时候，安装人员利用手持设备的扫描功能，从产品标签上扫描获取Install Code和Eui64；</li><li>将获取到的Install Code和Eui64告诉Trust Center（一般是协调器）；</li><li>然后在Trust Center上通过这个Install Code得到Link Ley，让Trust Center知道IEEE地址为Eui64的这个新设备必须使用这个Link Key进行组网；</li><li>待入网的新设备这边，从flash中读取出预先烧录的Install Code，然后使用相同的算法得出Link key。</li></ul><p>待入网的新设备这边计算得出的Link Key应与Trust Center端的派生Link Key相同。这样，即使消息已加密，他们也可以在应用程序层进行通信。接下来就开始组网的过程了。</p><p>An Install Code is a sequence of 16 bytes followed by 2 bytes of CRC. A complete 18 bytes sequence is needed to generate a unique TCLK. The usage of install codes defined in Z3.0 was added to allow a generalized out-of-band key delivery method for network commissioning. It works as follows:</p><ol><li>TC gets the install code and the 64-bit IEEE address of the device that will use this install code to join, via any user interface (serial, display and switches, etc.). The install code must be physically provided with the joining device.</li><li>TC validates the CRC of the install code introduced. If this is valid then a TCLK entry is added into the TC with the derived key and the address of the corresponding device.</li><li>The joining device is instructed to use its install code to generate the corresponding TCLK.</li><li>The network is open by any means.</li><li>The joining device performs association and the Trust Center delivers the network key encrypted in APS layer with the install code derived key.</li><li>After this, the joining device must perform the update of its TCLK as BDB specification requires.</li></ol><p>For further details on how to generate the install codes, see the Base Device Specification [7]. This is supported only by R21 or later revisions, so to allow backwards compatibility the application must have a way to attempt joining networks without the usage of Install Codes.</p><h3 id="3-2-3-Distributed-Security-Global-Link-Key"><a href="#3-2-3-Distributed-Security-Global-Link-Key" class="headerlink" title="3.2.3 Distributed Security Global Link Key"></a>3.2.3 Distributed Security Global Link Key</h3><p>在Distributed Security Network中，没有Trust Center，每个Router都可以分发 network key。</p><p>由Router父节点向新入网设备分发的network key，在APS层是使用Distributed Security Global Link Key进行加密的。</p><p>如果希望能保证和其他的ZigBee 3.0的设备之间互联互通的话，这个密钥时不能改变的。</p><p>Distributed Security Global Link Key (0:15) = 0xd0 0xd1 0xd2 0xd3 0xd4 0xd5 0xd6 0xd7 0xd8 0xd9 0xda 0xdb 0xdc 0xdd 0xde 0xdf</p><h3 id="3-2-4-Touchlink-Preconfigured-Link-Key"><a href="#3-2-4-Touchlink-Preconfigured-Link-Key" class="headerlink" title="3.2.4 Touchlink Preconfigured Link Key"></a>3.2.4 Touchlink Preconfigured Link Key</h3><p>如果新设备是要通过touchlink的方式进行组网的话，就需要使用Touchlink Preconfigured Link Key。</p><p>Touchlink Preconfigured Link Key (0:15) = 0xc0 0xc1 0xc2 0xc3 0xc4 0xc5 0xc6 0xc7 0xc8 0xc9 0xca 0xcb 0xcc 0xcd 0xce 0xcf</p><h1 id="四、网络层安全"><a href="#四、网络层安全" class="headerlink" title="四、网络层安全"></a>四、网络层安全</h1><h2 id="4-1-总览"><a href="#4-1-总览" class="headerlink" title="4.1 总览"></a>4.1 总览</h2><p>该密钥称为Network Key。由于它是一种对称加密算法，因此同一ZigBee网络中的所有设备都将使用相同的Network Key。</p><p>在网络安全标头中，添加了“帧计数器”的字段和加密信息节点的源Eui64，以防止重发攻击。还添加了密钥序列号以支持Network Key更新。</p><h2 id="4-2-逐跳安全"><a href="#4-2-逐跳安全" class="headerlink" title="4.2 逐跳安全"></a>4.2 逐跳安全</h2><p><img src="Hop-by-Hop-vs-End-to-End.png"></p><p>APS层的安全性，是<strong>端到端</strong>安全性。在APS层，是节点A加密好了之后一直得等到达目的地（节点C）之后才去解密。这中间的加密/解密密钥（Link Key）只要A和C两个知道，B不知道这个密钥，不能去进行加密解密，所以B不关心通信的内容。在这种情况下，我们可以有很多的Link Key，只要通信的双方知道即可。</p><p>网络层的安全性，是逐跳安全性。A加密好了在发给C的过程中要经过B，B收到这个报文后要先解密再加密，加密完了之后再发给下一跳。由于所有的中间节点都要参与解密和重新加密的过程，所以所有的节点都必须使用相同的Network Key。</p><p><img src="Hop-by-Hop-Security.png"></p><p>路由器节点需要解密该消息，然后对其进行加密，然后替换安全标头中的信息，再将其发送出去。如果解密失败，该消息将立即被丢弃。</p><p>这样的好处是可以尽快丢弃攻击消息。</p><h2 id="4-3-Network-Key"><a href="#4-3-Network-Key" class="headerlink" title="4.3 Network Key"></a>4.3 Network Key</h2><p>Network Key是一个16字节的八位位组。通常，它是在网络创建时由协调器随机生成的。当新设备加入网络时，它们必须获得Network Key的副本。</p><p>在ZigBee网络中，将Network Key分发给新设备的角色称为Trust Center。有两种典型的安全模型，即集中式安全网络和分布式安全网络。</p><p><img src="Security-Model.png"></p><p>在集中式安全网络中，只有一个Trust Center，通常是协调器。所有新设备将从协调器获取Network Key。<br>在分布式安全网络中，没有一个固定的Truster Center，也就是说每个路由器都是一个Trust Center。新设备可以从每个路由器父节点那里获取Network Key。</p><p>Distributed Security Model目前主要就是在飞利浦的Touch Link上在使用。ZigBee 3.0中最主要的还是Centralized Security Model的模式。</p><p>由于需要将Network Key从一个设备传输到另一台设备，因此在传输过程中需要对密钥值进行加密。此加密在应用程序层中完成。我们稍后再讨论。</p><p><img src="%E6%8B%BF%E7%A0%B4%E4%BB%91ZigBee.jpg"></p><center>    <font size=4>        【配套<font color='red'><strong>源码</strong></font>、<font color='red'><strong>文档</strong></font>、<font color='red'><strong>软件</strong></font>、<font color='red'><strong>硬件</strong></font>等资源，请移步技术交流群：<font color='red'><strong>拿破仑ZigBee</strong></font>（263671349）】    </font></center>]]></content>
+      
+      
+      <categories>
+          
+          <category> zigbee 3.0 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ZigBee 3.0 </tag>
+            
+            <tag> Z-Stack </tag>
+            
+            <tag> EmberZnet </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MATLAB学习教程-02：入门</title>
+      <link href="matlab-2/"/>
+      <url>matlab-2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、课程概述"><a href="#一、课程概述" class="headerlink" title="一、课程概述"></a>一、课程概述</h1><h1 id="二、命令"><a href="#二、命令" class="headerlink" title="二、命令"></a>二、命令</h1><h2 id="2-1-输入命令"><a href="#2-1-输入命令" class="headerlink" title="2.1 输入命令"></a>2.1 输入命令</h2><p>（1）执行运算时，如果不专门指定变量，MATLAB 会自动新建一个名为 ans 的变量用来存储计算结果。</p><p>（2）MATLAB 中的等号 (=) 是赋值运算符，MATLAB 会首先计算等号右侧的表达式，再赋给左侧的变量。</p><p>（3）工作区窗口中显示的是当前位于工作区中的所有变量。</p><p>（4）当输入命令而没有以分号结尾时，MATLAB 将会在命令提示符下显示结果；如果在命令的末尾添加以分号结尾，将抑制输出显示，但仍会执行该命令。</p><p>（5）在命令行窗口为活动窗口的前提下，按键盘上的向上箭头键可以重新调用以前的命令。</p><p>（6）MATLAB 不会在命令行窗口中自动重新运行以前的命令，所以以前的变量的值会保持不变。</p><h2 id="2-2-命名变量"><a href="#2-2-命名变量" class="headerlink" title="2.2 命名变量"></a>2.2 命名变量</h2><p>（1）MATLAB 变量命名规则</p><ul><li>仅包含字母、数字和下划线</li><li>以字母开头</li><li>区分大小写</li></ul><h2 id="2-3-保存和加载变量"><a href="#2-3-保存和加载变量" class="headerlink" title="2.3 保存和加载变量"></a>2.3 保存和加载变量</h2><p>（1）用 save 命令可以将工作区中的变量保存到 MATLAB 特定格式文件（.mat）中。<br>举例：将工作区中所有变量保存到名为 datafile.mat 的文件中</p><blockquote><blockquote><p>save datafile</p></blockquote></blockquote><p>举例：仅将1个变量 m 保存到名为 justm.mat 的新 MAT 文件中</p><blockquote><blockquote><p>save justm m</p></blockquote></blockquote><p>（2）使用 load 命令可以从 MAT 文件中加载变量<br>举例：从文件 datafile.mat 中加载所有变量</p><blockquote><blockquote><p>load datafile</p></blockquote></blockquote><p>举例：从文件 myData.mat 中仅加载1个变量 m</p><blockquote><blockquote><p>load myData m</p></blockquote></blockquote><p>（3）通过输入变量的名称，可以查看工作区中列出的任何变量的内容<br>举例：显示变量 data 的内容</p><blockquote><blockquote><p>data</p></blockquote></blockquote><p>（4）当要在 MATLAB 中切换处理新问题时，可以使用 clear 函数从工作区中删除所有变量。<br>举例：将工作区清空</p><blockquote><blockquote><p>clear</p></blockquote></blockquote><p>（5）clear 函数清理工作区，clc 命令清理命令行窗口。<br>举例：使用 clc 命令清空命令行窗口。</p><blockquote><blockquote><p>clc</p></blockquote></blockquote><h2 id="2-4-使用内置的函数和常量"><a href="#2-4-使用内置的函数和常量" class="headerlink" title="2.4 使用内置的函数和常量"></a>2.4 使用内置的函数和常量</h2><p>（1）MATLAB 包含一些内置的常量，例如用 pi 表示 π。<br>举例：创建一个名为 x 的变量，其值为 π/2</p><blockquote><blockquote><p>x = pi/2</p></blockquote></blockquote><p>（2）MATLAB 包含许多内置的函数，例如 abs（计算绝对值）和 eig（计算特征值）。MATLAB 使用圆括号来传递函数输入，与标准的数学表示法类似。<br>举例：使用 sin 函数计算 x 的正弦值，并将结果赋给一个名为 y 的变量。</p><blockquote><blockquote><p>y = sin(x)</p></blockquote></blockquote><p>举例：使用 sqrt 函数计算 -9 的平方根。将结果赋给一个名为 z 的变量。</p><blockquote><blockquote><p>z = sqrt(-9)<br>注意：解包含虚数 i，这是 MATLAB 中的内置常量。</p></blockquote></blockquote><p>（3）在命令行窗口和工作区窗口中仅显示前四个小数位，但它在内部是用更高的精度表示的，可以使用 format 函数控制显示的精度。<br>举例：提高命令行窗口变量显示的精度</p><blockquote><blockquote><p>format long</p></blockquote></blockquote><p>举例：降低（还原）命令行窗口变量显示的精度</p><blockquote><blockquote><p>format short</p></blockquote></blockquote><h1 id="三、MATLAB桌面和编辑器"><a href="#三、MATLAB桌面和编辑器" class="headerlink" title="三、MATLAB桌面和编辑器"></a>三、MATLAB桌面和编辑器</h1><h2 id="3-1-MATLAB桌面和编辑器"><a href="#3-1-MATLAB桌面和编辑器" class="headerlink" title="3.1 MATLAB桌面和编辑器"></a>3.1 MATLAB桌面和编辑器</h2><p>（1）要创建实时脚本，单击工具栏中的“New Live Script”即可</p><h2 id="3-2-MATLAB编辑器"><a href="#3-2-MATLAB编辑器" class="headerlink" title="3.2 MATLAB编辑器"></a>3.2 MATLAB编辑器</h2><p>（1）当在实时编辑器中完成任务时，命令行窗口和工作区会最小化，仍可以通过点击它们的名称来访问它们。</p><h2 id="3-3-运行脚本"><a href="#3-3-运行脚本" class="headerlink" title="3.3 运行脚本"></a>3.3 运行脚本</h2><p>（1）新增内容分为“文本”和“代码”两种，可以在脚本文件中自由切换。</p><p>编辑脚本文件时，主要用到图标：</p><ul><li>“分节符”：添加一个分节符，用来上下分节</li><li>“文本”：添加一行文本</li><li>“代码”：添加一行代码</li></ul><p>运行脚本文件时：</p><ul><li>“运行”：自上而下，运行整个脚本文件（所有节）</li><li>“运行节”：运行光标所在节</li><li>“运行并前进”：执行完光标所在节，并跳转到下一节</li></ul><h1 id="四、向量和矩阵"><a href="#四、向量和矩阵" class="headerlink" title="四、向量和矩阵"></a>四、向量和矩阵</h1><p>什么是数组？</p><p><img src="array.png"></p><p>所有 MATLAB 变量均为数组。这意味着每个变量都可以包含多个元素。您可以使用数组将相关数据存储在一个变量中。</p><h2 id="4-1-手动输入数组"><a href="#4-1-手动输入数组" class="headerlink" title="4.1 手动输入数组"></a>4.1 手动输入数组</h2><h3 id="4-1-1-标量"><a href="#4-1-1-标量" class="headerlink" title="4.1.1 标量"></a>4.1.1 标量</h3><p>单个称为标量的数值实际上是一个 1×1 数组，也即它包含 1 行 1 列。</p><p>输入：<br>x = 1</p><p>结果：<br>x = 1</p><h3 id="4-1-2-向量"><a href="#4-1-2-向量" class="headerlink" title="4.1.2 向量"></a>4.1.2 向量</h3><p>您可以使用方括号创建包含多个元素的数组。</p><h4 id="4-1-2-1-行向量"><a href="#4-1-2-1-行向量" class="headerlink" title="4.1.2.1 行向量"></a>4.1.2.1 行向量</h4><p>当用空格（或逗号）分隔数值时（如前面的任务中所示），MATLAB会将这些数值组合为一个行向量，行向量是一个包含一行多列的数组 (1×n)。</p><p>输入：<br>x = [1 2 3]<br>或<br>x = [1,2,3]</p><p>结果：<br>x =<br>    1    2    3</p><h4 id="4-1-2-2-列向量"><a href="#4-1-2-2-列向量" class="headerlink" title="4.1.2.2 列向量"></a>4.1.2.2 列向量</h4><p>当用分号分隔数值时，MATLAB会创建一个列向量 (n×1)。</p><p>输入：<br>x = [1;2;3]</p><p>结果：<br>x =<br>    1<br>    2<br>    3</p><h3 id="4-1-3-矩阵"><a href="#4-1-3-矩阵" class="headerlink" title="4.1.3 矩阵"></a>4.1.3 矩阵</h3><p>可以组合使用空格和分号来创建一个矩阵，即包含多行多列的数组。输入矩阵时，您必须逐行输入它们。</p><p>输入：<br>x = [1 2 3;4 5 6;7 8 9]<br>或<br>x = [1,2,3;4,5,6;7,8,9]<br>或<br>x = [1 2 3;4,5,6;7 8 9]</p><p>结果：<br>x =<br>    1    2    3<br>    4    5    6<br>    7    8    9</p><h3 id="4-1-4-方括号内运算"><a href="#4-1-4-方括号内运算" class="headerlink" title="4.1.4 方括号内运算"></a>4.1.4 方括号内运算</h3><p>在 MATLAB 中，可以在方括号内执行计算。</p><p>输入：<br>x = [abs(-4) 4^2]</p><p>结果：<br>x =<br>     4    16</p><h2 id="4-2-创建等间距向量"><a href="#4-2-创建等间距向量" class="headerlink" title="4.2 创建等间距向量"></a>4.2 创建等间距向量</h2><p>请注意，如果您使用 linspace 或 : 创建向量，则不需要使用方括号 ([])。</p><h3 id="4-2-1-使用-创建"><a href="#4-2-1-使用-创建" class="headerlink" title="4.2.1 使用:创建"></a>4.2.1 使用:创建</h3><p>对于长向量，输入单个数值是不实际的。可用来创建等间距向量的替代便捷方法是使用 : 运算符并仅指定起始值和最终值。</p><p>请注意，当您使用冒号运算符时，不需要方括号。</p><h3 id="4-2-1-1-创建默认等间距向量"><a href="#4-2-1-1-创建默认等间距向量" class="headerlink" title="4.2.1.1 创建默认等间距向量"></a>4.2.1.1 创建默认等间距向量</h3><p>输入：<br>y = 1:4</p><p>结果：<br>y =<br>    1    2    3    4</p><h3 id="4-2-1-2-创建指定等间距向量"><a href="#4-2-1-2-创建指定等间距向量" class="headerlink" title="4.2.1.2 创建指定等间距向量"></a>4.2.1.2 创建指定等间距向量</h3><p>: 运算符使用默认的间距 1，但是您可以指定您自己的间距，如下所示。</p><p>输入：<br>x = 20:2:26</p><p>结果：<br>x =<br>    20    22    24    26</p><p>输入：<br>x = 1:0.5:4</p><p>结果：<br>x =<br>    1.0000    1.5000    2.0000    2.5000    3.0000    3.5000    4.0000</p><h3 id="4-2-2-使用linspace函数创建"><a href="#4-2-2-使用linspace函数创建" class="headerlink" title="4.2.2 使用linspace函数创建"></a>4.2.2 使用linspace函数创建</h3><p>如果您知道向量中所需的元素数目（而不是每个元素之间的间距），则可以改用 linspace 函数：<br>linspace(first,last,number_of_elements)</p><p>注意，请使用逗号 (,) 分隔 linspace 函数的输入。</p><p>输入：<br>x = linspace(0,1,5)</p><p>结果：<br>x =<br>    0    0.250    0.500    0.750    1.000</p><p>输入：<br>x = linspace(1,10,5)</p><p>结果：<br>x =<br>    1.0000    3.2500    5.5000    7.7500    10.0000</p><h2 id="4-3-向量的转置"><a href="#4-3-向量的转置" class="headerlink" title="4.3 向量的转置"></a>4.3 向量的转置</h2><p>linspace 和 : 运算符都可创建行向量。但是，您可以使用转置运算符 (‘) 将行向量转换为列向量。</p><h3 id="4-3-1-分布进行创建和转置"><a href="#4-3-1-分布进行创建和转置" class="headerlink" title="4.3.1 分布进行创建和转置"></a>4.3.1 分布进行创建和转置</h3><p>输入：<br>x = 1:3;<br>x = x’</p><p>结果：<br>x =<br>    1<br>    2<br>    3</p><p>输入：<br>x = linspace(1,10,5)<br>x = x’</p><p>结果：<br>x =<br>    1.0000<br>    3.2500<br>    5.5000<br>    7.7500<br>    10.0000</p><h3 id="4-3-2-一步完成创建和转置"><a href="#4-3-2-一步完成创建和转置" class="headerlink" title="4.3.2 一步完成创建和转置"></a>4.3.2 一步完成创建和转置</h3><p>您可以通过在一条命令中创建行向量并将其全部转置来创建列向量。注意此处使用圆括号来指定运算的顺序。</p><p>输入：<br>x = (1:2:5)’</p><p>结果：<br>x =<br>    1<br>    3<br>    5</p><p><strong>补充练习</strong></p><p>如果您要创建从 1 到 2π 的等间距向量，其中包含 100 个元素，您会使用 linspace 还是 :？</p><p>输入：<br>x = linspace(1,2*pi,100)<br>x = x’</p><p>结果：<br>x =<br>    1.0000<br>    1.0534<br>    1.1067<br>    1.1601<br>    1.2135<br>    1.2668<br>    1.3202<br>    .<br>    .<br>    .</p><p>输入：<br>x = 1:(2<em>pi-1)/(100-1):2</em>pi<br>x = x’</p><p>结果：<br>x =<br>    1.0000<br>    1.0534<br>    1.1067<br>    1.1601<br>    1.2135<br>    1.2668<br>    1.3202<br>    .<br>    .<br>    .</p><h2 id="4-4-数组创建函数"><a href="#4-4-数组创建函数" class="headerlink" title="4.4 数组创建函数"></a>4.4 数组创建函数</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> matlab </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MATLAB </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MATLAB学习教程-01：目录</title>
+      <link href="matlab-1/"/>
+      <url>matlab-1/</url>
+      
+        <content type="html"><![CDATA[<p>本专题的目录安排如下：</p><ul><li>（点击链接-&gt;）<a href="https://oceanwang.top/matlab-1/">MATLAB学习教程-01：目录</a></li><li>（点击链接-&gt;）<a href="https://oceanwang.top/matlab-2/">MATLAB学习教程-02：入门</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> matlab </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MATLAB </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ZigBee 3.0学习教程-04：基础知识-Cluster与ZCL规范</title>
+      <link href="zigbee-3.0-4/"/>
+      <url>zigbee-3.0-4/</url>
+      
+        <content type="html"><![CDATA[<center>    <font size=4>        【配套<font color='red'><strong>源码</strong></font>、<font color='red'><strong>文档</strong></font>、<font color='red'><strong>软件</strong></font>、<font color='red'><strong>硬件</strong></font>等资源，请移步技术交流群：<font color='red'><strong>拿破仑ZigBee</strong></font>（263671349）】    </font></center><h1 id="一、Clusters"><a href="#一、Clusters" class="headerlink" title="一、Clusters"></a>一、Clusters</h1><p>在每个Endpoint中，我们可以配置几个Clusters。ZigBee Cluster实际上是一种通信模型。</p><p><img src="Cluster.png"></p><p>它基于客户端/服务器模式，用于描述两个设备之间的应用协议。每个Cluster都有一个Cluster ID，该ID在ZigBee CLuster Library（ZCL）中定义。Cluster中可以定义多个属性和命令。</p><h1 id="二、举例"><a href="#二、举例" class="headerlink" title="二、举例"></a>二、举例</h1><p>让我们看一个Cluster的示例，以便我们可以更好地理解它。</p><p>例如，我们需要实现一个带有两个灯泡的灯。我们可以在其中定义两个Endpoint。每个Endpoint代表一个灯泡。</p><p><img src="OnOff-Cluster.png"></p><p>对于基本功能，例如打开/关闭，我们可以使用打开/关闭 Cluster。灯是服务器端，而开关是客户端。服务器端定义了一个属性“ on / off”，指示灯是打开还是关闭。还定义了诸如“打开”，“关闭”，“切换”之类的命令，这些命令应从客户端发送到服务器端。</p><p><img src="Level-Control-Cluster.png"></p><p>如果我们需要更多功能，例如我们需要支持亮度级别控制。我们可以使用亮度级别控制Cluster。在此Cluster中，服务器端定义了一个属性“Level”，指示灯泡的亮度。还定义了诸如“逐渐变化亮度级别”之类的命令，这些命令应从客户端发送到服务器端。</p><p><img src="Color-Control-Cluster.png"></p><p>而且，如果我们需要更多功能，例如需要支持颜色控制，则可以使用颜色控制Cluster。</p><p>对于ZCL规范中没有定义的一些功能，开发者可以添加一些自定义的Cluster，自己去定义属性、命令等，就成了一个私有的协议。</p><p><img src="%E6%8B%BF%E7%A0%B4%E4%BB%91ZigBee.jpg"></p><center>    <font size=4>        【配套<font color='red'><strong>源码</strong></font>、<font color='red'><strong>文档</strong></font>、<font color='red'><strong>软件</strong></font>、<font color='red'><strong>硬件</strong></font>等资源，请移步技术交流群：<font color='red'><strong>拿破仑ZigBee</strong></font>（263671349）】    </font></center>]]></content>
+      
+      
+      <categories>
+          
+          <category> zigbee 3.0 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ZigBee 3.0 </tag>
+            
+            <tag> Z-Stack </tag>
+            
+            <tag> EmberZnet </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ZigBee 3.0学习教程-03：基础知识-协议架构</title>
+      <link href="zigbee-3.0-3/"/>
+      <url>zigbee-3.0-3/</url>
+      
+        <content type="html"><![CDATA[<center>    <font size=4>        【配套<font color='red'><strong>源码</strong></font>、<font color='red'><strong>文档</strong></font>、<font color='red'><strong>软件</strong></font>、<font color='red'><strong>硬件</strong></font>等资源，请移步技术交流群：<font color='red'><strong>拿破仑ZigBee</strong></font>（263671349）】    </font></center><h1 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h1><p>下图阐述了协议体系结构。</p><p><img src="Protocol-Overview.png"></p><p>物理层和MAC层由IEEE-802.15.4定义。</p><ul><li>物理层，这部分功能通常是由芯片或者硬件来实现，负责无线电收发管理，包括诸如调制/解调，信号强度检测等功能；</li><li>MAC层，一部分是由硬件来实现，一部分是由软件来实现，负责数据收发，重传、扫描，单跳通信。</li></ul><p>网络层、APS子层和应用层这些功能，都是由ZigBee联盟来定义的。</p><ul><li>网络层，负责消息的路由，设备状态的维护，子节点管理等等；</li><li>应用程序支持层（APS），在网络层和应用层之间，负责端到端的重传和确认；</li><li>应用层，包括了一个ZDO（ZigBee设备管理对象（Endpoint 0），每个应用程序实例称为一个Endpoint）和用户应用（留给用户设计）；<br>另外，在APS层和网络层都有一些安全特性，包括数据的加密、校验等等，可用于保护网络免遭黑客攻击。</li></ul><p>整个协议栈中，除了用户应用以外，其余的部分都是由平台供应商来实现，用户只需要专注在应用层的开发即可。</p><h1 id="二、物理层"><a href="#二、物理层" class="headerlink" title="二、物理层"></a>二、物理层</h1><p>ZigBee在ISM频率上工作。通信信道定义如下：</p><p><img src="Physical-Layer.png"></p><p>ZigBee最常见的工作频率是2.4GHz。</p><h2 id="2-1-调制"><a href="#2-1-调制" class="headerlink" title="2.1 调制"></a>2.1 调制</h2><p>物理层还处理数据原始数据的发送和接收。PHY层在868/915 MHz频带中使用二进制相移键控（BPSK），并在2.4 GHz下使用偏移正交相移键控（O-QPSK）。信息通过直接序列扩频（DSSS）编码到载波上，DSSS是一种固有的鲁棒方法，可通过信号处理增益来提高多径性能和接收机灵敏度。请注意，2.4 GHz是全球ZigBee通信最常用的频段。唯一官方Sub GHz的支持是英国的Smart Energy。</p><h2 id="2-2-输出功率"><a href="#2-2-输出功率" class="headerlink" title="2.2 输出功率"></a>2.2 输出功率</h2><p>802.15.4是专为低功耗，低数据速率，低成本的网络设计的。这些通常称为PAN或个人局域网。它主要是为中小无线电范围的应用而设计，但是外接功率放大器也是可以的。在大多数国家中，允许获得大约+20 dBm的输出功率。在欧洲，最大发射功率被限制到+10 dBm左右。但是，这足以使您到达大约一到三公里的距离，这取决于您的链路预算，所使用的功率放大系数和/或所拥有的天线的类型。</p><h2 id="2-3-数据速率"><a href="#2-3-数据速率" class="headerlink" title="2.3 数据速率"></a>2.3 数据速率</h2><p>使用2.4 GHz直接序列扩频Phy或DSSS，原始比特率为250 kb / s。在实际应用中，通常只有理论速率的四分之一或五分之一。预期的吞吐率与56k波特调制解调器相当。单跳链路上每秒约52700 kb。放入多跳效果后，传播所需的时间会更长一些。</p><h2 id="2-4-开阔场地的传输距离"><a href="#2-4-开阔场地的传输距离" class="headerlink" title="2.4 开阔场地的传输距离"></a>2.4 开阔场地的传输距离</h2><p>对于2.4GHz的PHY，在视线可达的空间，传输距离大约可以达到2KM。这是在大部分地区的无线法规允许的范围内，经过放大发射功率来实现的。由于存在大量信道的缘故，你可以选择一个相对安静的信道来避免干扰，从而保证可靠的通信。如果你选择了一个嘈杂的信道，ZigBee的网络管理单元可以切换到一个新的信道，这就是被称为“frequency agility”的特性。工作在2.4GHz频段还有一个好处，因为这个频段在全球范围内都是可用的，这样可以让你的产品具有更广阔的应用空间。</p><h2 id="2-5-总结"><a href="#2-5-总结" class="headerlink" title="2.5 总结"></a>2.5 总结</h2><p>物理层的功能包括：</p><ul><li>物理无线和MAC层的接口</li><li>无线电开/关控制（ZigBee硬件的收发是不能同时进行的）</li><li>调制与解调</li><li>信道选择</li><li>链接质量估算，信号强度检测</li><li>能量检测，功率调节</li></ul><h2 id="2-6-补充"><a href="#2-6-补充" class="headerlink" title="2.6 补充"></a>2.6 补充</h2><p>ZigBee在2.4GHz的工作频率范围内，和2.4GHZ的WiFi的工作频率是有重叠的，WiFi的信道带宽通常是20MHz或者40MHz。</p><p><img src="ZigBee-Wifi-Co-Existence.png"></p><p>当WiFi和ZigBee在同一个空间内工作的时候，就可能会出现干扰。如何保证ZigBee和WiFi在狭小的空间内的共存，这对于ZigBee网关的设计会是一个极大的挑战。</p><h1 id="三、媒体访问控制（MAC）层"><a href="#三、媒体访问控制（MAC）层" class="headerlink" title="三、媒体访问控制（MAC）层"></a>三、媒体访问控制（MAC）层</h1><p>MAC层的主要功能是确保可靠的单跳消息传递。以下是有关这些功能的更多详细信息。</p><h2 id="3-1-CSMA-CA"><a href="#3-1-CSMA-CA" class="headerlink" title="3.1 CSMA-CA"></a>3.1 CSMA-CA</h2><p>在同一个空间内，如果多个无线节点同时发送信号，就会互相在空间中形成干扰，导致数据变形，CSMA-CA机制就是用于避免这种情况。简单来说就是一个listen before talk的机制，发之前先听一下。听的目的，就是判断一下当前这个信道上有没有别人在用这个信道。</p><ul><li>如果没有，那么我就发；</li><li>如果由，那么我就等一等，等到信道空闲了，我再发。</li></ul><p>假设有一个节点正在listen，他将根据接收到的信号的RSSI来做出判断</p><p>如果在当前环境里，我能接收到的信号强度小于一个门限，比如小于-75 dBm，我就认为这个信道上没有人在发送，那我就可以开始发送了， </p><p><img src="CSMA-CA-Send.png"></p><p>如果听到有一个节点正在发送，但是因为他发的信号强度比较小，那么我仍然检测不到他的信号。这个时候我能听到的信号强度还是小于这个门限的，所以我还是可以继续发送。因为两者之间隔得比较远，两个限号之间碰不到。</p><p><img src="CSMA-CA-Send-2.png"></p><p>假如有一个节点离我很近，他在发信号。我听的时候，我能够检测到他的信号强度大于这个门限，那这时候我就不能发送了。我就需要等一等，然后过一段时间我再来听一下，看看能不能发送了，</p><p><img src="CSMA-CA-Wait.png"></p><p>802.15.4允许多个网络位于同一通道上。因此，需要采取某种方式来避免来自不同网络的数据包在空中碰撞而造成通信错误。MAC子层使用CSMA-CA（Carrier Sense Multiple Access/Collision Avoidance）控制对无线电的访问。避免碰撞是通过CCA（Clear Channel Assessment）完成的。</p><ul><li>在发送之前，每个节点必须检查电波是否可以正常发送（RSSI低于CCA阈值）。</li><li>如果是（RSSI低于CCA阈值），则节点应继续进行并在进行少量随机退避后进行传输。</li><li>如果CCA没有通过（RSSI高于CCA阈值），则该节点应等待多个退避周期，然后才能再次尝试该过程。</li></ul><p>随机退避允许多个节点交错传输，因此它们总是可以在某个时间点找到干净的无线空间来作数据传输。尽管比特率很低，因为数据包比较小（128 bytes），即使在非常嘈杂的信道上每一个节点也可以成功地完成数据传输。</p><h2 id="3-2-确认"><a href="#3-2-确认" class="headerlink" title="3.2 确认"></a>3.2 确认</h2><p>MAC层还为节点提供了一种方法，该方法可通过确认得知节点已成功接收到1跳单播传输，并且已通过验证CRC保留了所传输消息的完整性。<br>多跳传输应在每个跳上进行确认。节点执行CCA检查并发送消息后，它会等待MAC确认。如果未收到消息，则该节点应尝试多次重发该消息，直到其最终成功或最大的重试次数已用尽。</p><p><img src="MAC-APS-Ack.gif"></p><p>MAC层的每一帧都是需要确认的，实际上是在中间的每一跳都要去做这样的确认的。比如网络中的节点A，需要给节点D发送一个报文，这个通信通常是在应用层进行的，也就是A的应用层要发一个包到D的应用层，因为A和D隔得比较远，中间需要经过几个中间节点，这种情况下数据报文的传输过程：</p><ul><li>首先，应用层发一个包交给网络层，然后交给MAC层，最后通过物理层发出去。</li><li>中间节点B收到之后，会立马发一个MAC层的Ack表示已经收到了</li><li>节点B的网络层收到这个包之后发现目的地址不是自己，就把这个包转给下一跳（节点C），</li><li>后续节点都会执行和B一样的流程，直到转到目的地。</li><li>当这个包到达目的节点之后，在节点D的APS层收到之后，会最终给一个端到端的一个Ack给原始节点A</li></ul><p>由此可见，在MAC层是逐跳的确认，在APS层是端到端的确认。</p><p>如果说节点A发给节点B的时候，MAC层发现没有收到这个MAC层的确认，就需要在MAC去重传。</p><p>如果最终发现一段时间之后，没有收到目的节点给它发APS Ack，最终在APS层也会有一个重传</p><h2 id="3-3-MAC帧"><a href="#3-3-MAC帧" class="headerlink" title="3.3 MAC帧"></a>3.3 MAC帧</h2><p>下图演示了MAC帧格式（ZigBee的帧格式）：</p><p><img src="MAC-Frame.png"></p><p>前面的Preamble、SPD和PHY header这些字段都是在物理层由硬件添加的。其中PHY header（物理层头部）是一个字节，这个字节的最高bit预留做其他的用途，剩余的7个bit用于表示这个MAC帧的长度，最多能够表示的长度是127。也就是MAC层最大的帧长度是127个字节。</p><p>在MAC header中有一个2个字节的Frame control字段，该字段的0~2位会标识出这个帧的类型，主要有4种类型的帧：</p><ul><li>Beacon，信标，用于扫描网络</li><li>Data，数据，用于从更高层传输数据</li><li>ACK，确认</li><li>MAC Command，MAC层的命令，包括设备入网时使用的一些命令，比如MAC Association这些命令。</li></ul><p>在每个MAC帧的末尾，有两个字节的CRC用于验证数据包的完整性。无线信号在空中传播容易受到干扰，导致某些比特变化了，这个时候CRC就会不对了，这个帧就会被丢弃掉了。</p><h1 id="四、网络层"><a href="#四、网络层" class="headerlink" title="四、网络层"></a>四、网络层</h1><p>在这里，我们将介绍ZigBee网络的一些基本概念，包括：</p><ul><li>设备类型</li><li>网络地址<ul><li>PAN ID</li><li>扩展 PAN ID</li></ul></li><li>设备地址<ul><li>节点编号</li><li>Eui64</li></ul></li></ul><h2 id="4-1-设备类型"><a href="#4-1-设备类型" class="headerlink" title="4.1 设备类型"></a>4.1 设备类型</h2><p>IEEE-802.15.4定义了两种设备类型：</p><ul><li><strong>FFD</strong>, 全功能设备，能够执行IEEE 802.15.4标准中描述的所有职责，并且可以在网络中担任任何角色。</li><li><strong>RFD</strong>, 剪裁功能设备，功能有限。</li></ul><p><strong>注意</strong>: RFD设备的处理能力和内存大小通常小于FFD设备。 </p><p>在ZigBee中，存在三种设备类型：</p><ul><li>协调器，Coordinator，他是负责创建网路的，所以他是第一个成员，所以他的地址是0x0000；</li><li>路由设备，Router，可以路由消息，作为网络的中间节点来转发消息；</li><li>终端设备，End Device，包括睡眠终端设备和非睡眠终端设备。作为网络的边缘节点，必须有一个parent，必须附着在一个router或者coordinator上面。不能转发消息，不能做路由用，不能做中间节点用。</li></ul><table><thead><tr><th align="left">设备类型</th><th align="left">创建网络</th><th align="left">路由</th><th align="left">供电方式</th><th align="left">作父节点</th><th align="left"></th></tr></thead><tbody><tr><td align="left">协调器</td><td align="left">是</td><td align="left">是</td><td align="left">主电源</td><td align="left">是</td><td align="left">网络中只有一个，且节点ID始终为0</td></tr><tr><td align="left">路由设备</td><td align="left">否</td><td align="left">是</td><td align="left">主电源</td><td align="left">是</td><td align="left"></td></tr><tr><td align="left">终端设备</td><td align="left">否</td><td align="left">否</td><td align="left">主电源或电池</td><td align="left">否</td><td align="left">必须有父节点</td></tr></tbody></table><p>Coordinator对比Router，除了可以创建网络之外，其余功能是一样的。</p><p>每个设备入网后，都会广播发出一个Announce报文，通知所有的设备，我加入这个网络了。</p><p><img src="ZigBee-Device-Announce.png"></p><p><img src="Device-Type.png"></p><h2 id="4-2-网络地址"><a href="#4-2-网络地址" class="headerlink" title="4.2 网络地址"></a>4.2 网络地址</h2><p><img src="PANID-0.png"></p><p>马鞍山虽然是一个地名，但不是一个精确的地名。据统计，中国可能有二十几个地方叫马鞍山。</p><p>对应到ZigBee网络也会有同样的问题。ZigBee使用PAN ID和扩展的PAN ID来识别网络。</p><p>马鞍山就类似于PAN ID，Extended PAN ID就类似一个全地名，比如说安徽省马鞍山市</p><p>ZigBee是一个低速率的通信技术，本身最大的数据传输速率就只有250Kbps，并且在实际传输的时候有MAC层头部、网络层头部，还有各种安全控制的字段等等，导致的后果就是真正有效的数据载荷占比比较低。这种情况下，如果每次通信仍然使用这个64 bit的PAN ID，就会导致有效载荷占比进一步降低。所以大部分时候的通信都是使用16 bit的PAN ID来标识目的网络，可以改善这种情况。仅在回复节点扫描请求入网的Beacon Request的Beacon报文中，或是进行PAN ID更新时，才会在报文中使用扩展的PAN ID。</p><h3 id="4-2-1-PAN-ID"><a href="#4-2-1-PAN-ID" class="headerlink" title="4.2.1 PAN ID"></a>4.2.1 PAN ID</h3><p>PAN，又称个人区域网络，通过其PAN ID与其他网络分开。这是同一PAN中所有节点将共享的16位标识符。因此，这与以太网世界中的子网掩码类似，因为您通常只与本地网络内的设备通信，在这种情况下为PAN。<strong>该标识符放置在每个传出数据包中的低层MAC层标头中，它使接收该数据包的设备可以过滤出与他们的网络无关的消息。</strong> 他们可以将其与自己的PAN ID进行比较，并确定这是来自自己网络中某人的消息，还是来自恰好在此信道上的其他网络中的某人的消息，因此无需尝试解码或解密。</p><p>0xFFFF这个PANID用于广播，那么所有网络都能收得到。</p><p><img src="PANID-1.png"></p><p><img src="PANID-2.png"></p><p>PAN ID由协调器在网络创建时随机生成，或者在创建网络的时候由用户指定。因为PAN ID是一个网络与另一个网络之间的区别因素，所以它应该是随机的以确保其唯一性。建议您为PAN ID选择一个随机的16位值，以防止您的网络与该区域中碰巧存在的任何其他网络重合。</p><p>现在，如果您碰巧选择了另一个网络已经使用的PAN ID，该怎么办？或者，如果您确实选择了一个与任何其他网络都没有冲突的随机PAN ID，但后来又有另一个网络与您的网络重叠，该怎么办？如果曾经发生过PAN ID冲突，则协议栈实际上可以检测到这种冲突并可以自动更新其PAN ID，并通知其网络中的所有节点都移至新的PAN ID，以便每个节点可以继续与原始网络中的节点进行通信，并排除冲突网络上的任何节点。如果PAN ID冲突，我们需要使用扩展的PAN ID来区分网络。</p><h3 id="4-2-2-扩展-PAN-ID"><a href="#4-2-2-扩展-PAN-ID" class="headerlink" title="4.2.2 扩展 PAN ID"></a>4.2.2 扩展 PAN ID</h3><p>扩展PAN ID是PAN中所有节点都知道的另一个网络标识符。</p><p>正常的短16位PAN ID由于简短，在空中传输的所有数据包中都有包含，但64位扩展PAN ID很少通过空中传输。扩展的PAN ID对于每个PAN也是唯一的，当16位PAN ID不足以始终将一个网络与另一个网络区分开时，它基本上用作备份标准。例如，当发生PAN ID冲突并且您要通知网络中的所有设备更新PAN ID时，将网络与冲突的网络区分开的方式是，网络中的这些设备都共享相同的扩展PAN ID。扩展PAN ID极不可能发生冲突，因为与短PAN ID中的16位相比，它具有64位。</p><p><img src="Ext-PAN-ID.png"></p><p>扩展的PAN ID由协调器在网络创建时随机生成。</p><p>这也是允许您选择网络的有用因素。如果您尝试加入一个网络而不是创建一个网络，那么您可能想知道如何判断哪些网络可用。网络之间可区分的方式不仅在PAN ID中，而且在扩展的PAN ID中。您可能想做一些特别的事情，决定只使用扩展PAN ID的特定子集，以便您可以将网络与其他网络区分开来，但不要太限制自己，因为您限制得越多您发生冲突的可能性就越大，并且如果您的扩展PAN ID曾经发生冲突，您实际上无能为力。它有点像WiFi SSID，不同之处在于WiFi网络之间的SSID可以相同，而ZigBee不同网络间的扩展PAN ID则不能相同。</p><h2 id="4-3-节点地址"><a href="#4-3-节点地址" class="headerlink" title="4.3 节点地址"></a>4.3 节点地址</h2><p>除了其网络范围的标准外，一个节点还通过其单独的节点地址与另一个节点区分开。</p><p>节点具有短地址和长地址。长地址是IEEE分配的MAC地址或EUI-64，称为IEEE地址或MAC地址。它是一个全球唯一的64位地址，这意味着世界上没有两个基于IEEE的无线电设备具有相同的EUI-64。通常在制造时分配。芯片在出厂之前，它们会被分配（IEEE会给芯片厂商分配不同的地址范围），并且它们永远不会改变。它用来区分不同的无线设备。但是因为64位是相对比较大的数据量，所以这个长地址不是经常通过空中发送的。</p><p><img src="Node-Address.png"></p><p>在大多数情况下，为了提供通信的效率，更短的16位地址是通过无线方式使用的。这被称为Short ID或Node ID，在网络中是唯一的，类似于以太网世界中的IP地址。它是在节点进入网络时由他的父节点分配的，并且在该网络内应该是唯一的。可能有两个网络，每个网络都有一个具有相同节点ID的节点，但是因为它们位于不同的PAN中，所以没有关系。</p><p><img src="Node-Address-Get.gif"></p><p><img src="Node-Address-Conflict.gif"></p><p>请注意，短地址有可能会发生变化，因为有可能会产生冲突。两个节点在进入网络时可能选择了相同的随机节点ID。如果发生这种情况，就像PAN ID方案一样，有一种解决冲突的方法。当节点注意到冲突时，基于EUI-64信息作为后备，它们可以商定新地址。因此，如果需要，节点可以根据冲突在运行时更改地址。</p><h1 id="五、应用层"><a href="#五、应用层" class="headerlink" title="五、应用层"></a>五、应用层</h1><p>在应用层中，可以通过实现多个Endpoint将物理设备拆分为多个逻辑设备。</p><h2 id="5-1-Endpoint"><a href="#5-1-Endpoint" class="headerlink" title="5.1 Endpoint"></a>5.1 Endpoint</h2><p>每个Endpoint代表一个逻辑设备。例如，如果我们有一个带有6个插座的智能插座适配器。我们可以使用6个Endpoint来实现它，以便我们可以分别打开/关闭每个插座。</p><p><img src="Endpoint.png"></p><p>Endpoint ID是一个8位的值，范围从0到255。</p><ul><li>Endpoint 0保留给ZigBee设备对象，主要用于管理目的。</li><li>用户应用程序可以使用Endpoint 1至239。</li><li>Endpoint 240到254保留用于特殊应用。像ZigBee Green Power一样，使用专用Endpoint 242。</li><li>Endpoint 255用于广播，所有的Endpoint都能收到。</li></ul><p><img src="Endpoint-to-Endpoint.png"></p><p>应用层的通信模型实际上是通信双方Endpoint之间的通信，一侧的Endpoint作为Client，另一侧的Endpoint作为Server。Client和Server之间通信的内容和格式，是由Cluster来定义的。</p><p><img src="%E6%8B%BF%E7%A0%B4%E4%BB%91ZigBee.jpg"></p><center>    <font size=4>        【配套<font color='red'><strong>源码</strong></font>、<font color='red'><strong>文档</strong></font>、<font color='red'><strong>软件</strong></font>、<font color='red'><strong>硬件</strong></font>等资源，请移步技术交流群：<font color='red'><strong>拿破仑ZigBee</strong></font>（263671349）】    </font></center>]]></content>
+      
+      
+      <categories>
+          
+          <category> zigbee 3.0 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ZigBee 3.0 </tag>
+            
+            <tag> Z-Stack </tag>
+            
+            <tag> EmberZnet </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ZigBee 3.0学习教程-02：基础知识-概述</title>
+      <link href="zigbee-3.0-2/"/>
+      <url>zigbee-3.0-2/</url>
+      
+        <content type="html"><![CDATA[<center>    <font size=4>        【配套<font color='red'><strong>源码</strong></font>、<font color='red'><strong>文档</strong></font>、<font color='red'><strong>软件</strong></font>、<font color='red'><strong>硬件</strong></font>等资源，请移步技术交流群：<font color='red'><strong>拿破仑ZigBee</strong></font>（263671349）】    </font></center><h1 id="一、什么是ZigBee"><a href="#一、什么是ZigBee" class="headerlink" title="一、什么是ZigBee"></a>一、什么是ZigBee</h1><p>随着物联网（IoT）行业的发展，越来越多的无线技术应运而生。</p><p><img src="IoT-Wireless-Technologies.png"></p><p>众所周知，在物联网行业中，我们有两种典型的网络。一个是WAN（广域网），另一个是PAN（个人区域网）。</p><ul><li>对于LoRa，NB-IoT，2G / 3G / 4G等无线技术，通常传输距离超过1 km，因此它们主要用于广域网（WAN）。</li><li>对于WiFi，蓝牙，BLE，ZigBee和Zwave等无线技术，通常的传输距离小于1公里，因此它们主要用于个人局域网（PAN）。</li></ul><p>ZigBee是IoT网络（尤其是家庭自动化行业）中最流行的无线技术之一。其主要特点包括：</p><ul><li>短距离 – 无线覆盖范围在10到100米之间；</li><li>低速率 – 最大数据速率为250 Kbps；</li><li>低功耗 – 处于睡眠状态的Endpoint设备在睡眠模式下可以使用低于5uA的电流；</li><li>网状网 – 网络可以轻松扩展到很大。理论上最大节点数为65535。</li></ul><h1 id="二、ZigBee的网络拓扑"><a href="#二、ZigBee的网络拓扑" class="headerlink" title="二、ZigBee的网络拓扑"></a>二、ZigBee的网络拓扑</h1><p>常见的网络拓扑结构主要有星形（Star）网络和网状（Mesh）网络两种。</p><p><img src="Star-vs-Mesh.png"></p><p>传统的星形网络的结构最典型的例子就是家庭WiFi场景。家里的WiFi无线路由器就是一个中心节点，家里所有的WiFi设备都要通过这个中心节点才能够上网。如果WiFi路由器坏了的话，整个网络中的所有设备就都上不了网了。</p><p><img src="Single-Point-Failure.png"></p><p>网络中如果有中心节点的话就很容易出现单点故障，然而Mesh网络结构中没有一个明显的所谓的中心节点，因此Mesh网络具有更高的网络可靠性。比如在ZigBee Mesh网络中，任意一个节点故障了，其余的节点仍然可以正常工作（就算是Coordinator发生故障，除了新设备不能加入之外，其余所有节点仍然可以正常工作）。</p><h1 id="三、ZigBee的历史"><a href="#三、ZigBee的历史" class="headerlink" title="三、ZigBee的历史"></a>三、ZigBee的历史</h1><p>ZigBee诞生在2003年，是<a href="https://zigbeealliance.org/">ZigBee联盟</a>发布和修订的开放标准，历史悠久。</p><p><img src="ZigBee-History.png"></p><p>从一(很早)开始，Silicon Labs就致力于ZigBee技术。Silicon Labs的ZigBee技术来自Ember，Ember是一家自成立以来就开始研究ZigBee的公司。2012年，Silicon Labs收购了Ember，并继续提供ZigBee产品和解决方案。</p><h1 id="四、ZigBee联盟"><a href="#四、ZigBee联盟" class="headerlink" title="四、ZigBee联盟"></a>四、ZigBee联盟</h1><p>ZigBee联盟是推广ZigBee技术的主要力量。这是一个开放的组织。任何公司都可以加入ZigBee联盟作为成员。Silicon Labs是ZigBee联盟的董事会成员。</p><p><img src="ZigBee-Alliance.png"></p><p>ZigBee联盟的主要三个工作是：</p><ul><li>为IoT（物联网）的无线设备端到设备端的通信<strong>制定</strong>开放的全球标准  </li><li>通过我们的认证计划对产品进行<strong>认证</strong>，以帮助确保互操作性  </li><li>在全球范围内<strong>推广</strong>我们的标准  </li></ul><p>2016年，ZigBee联盟发布了最新的ZigBee标准，即ZigBee 3.0。之前使用的配置文件（如ZigBee Home Automation（ZHA），ZigBee Light Link（ZLL）等）已统一在一起。</p><p><img src="ZigBee-Profiles.png"></p><p>此外，随着安全性变得越来越重要，安全性得到了增强。</p><p>自2017年起，ZigBee 3.0规范就是强制的。所有不满足ZigBee 3.0规范的新设备，将无法通过认证。</p><p>认证主要分为两种：</p><ul><li>ZigBee兼容性平台的认证，主要针对于芯片厂商的ZigBee芯片，以及对应的ZigBee协议栈；</li><li>ZigBee兼容性产品的认证，主要针对于基于ZigBee兼容性平台开发的产品。</li></ul><p><img src="%E6%8B%BF%E7%A0%B4%E4%BB%91ZigBee.jpg"></p><center>    <font size=4>        【配套<font color='red'><strong>源码</strong></font>、<font color='red'><strong>文档</strong></font>、<font color='red'><strong>软件</strong></font>、<font color='red'><strong>硬件</strong></font>等资源，请移步技术交流群：<font color='red'><strong>拿破仑ZigBee</strong></font>（263671349）】    </font></center>]]></content>
+      
+      
+      <categories>
+          
+          <category> zigbee 3.0 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ZigBee 3.0 </tag>
+            
+            <tag> Z-Stack </tag>
+            
+            <tag> EmberZnet </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建个人博客网站教程-14：Hexo+GitHub Pages：GitHub Actions自动部署</title>
+      <link href="personal-website-14/"/>
+      <url>personal-website-14/</url>
+      
+        <content type="html"><![CDATA[<p>本文的前提是：必须已经在用GitHub对Hexo源码仓库进行管理了。</p><h1 id="一、本地生成SSH密钥对"><a href="#一、本地生成SSH密钥对" class="headerlink" title="一、本地生成SSH密钥对"></a>一、本地生成SSH密钥对</h1><p>在电脑上任意位置右击打开Git Bash窗口，输入如下指令并回车，创建SSH密钥对：<br>ssh-keygen -t rsa -C “<a href="mailto:&#117;&#x73;&#101;&#x72;&#x6e;&#x61;&#109;&#101;&#x40;&#101;&#x78;&#x61;&#x6d;&#112;&#108;&#x65;&#x2e;&#x63;&#x6f;&#109;">&#117;&#x73;&#101;&#x72;&#x6e;&#x61;&#109;&#101;&#x40;&#101;&#x78;&#x61;&#x6d;&#112;&#108;&#x65;&#x2e;&#x63;&#x6f;&#109;</a>“<br><strong><em>（上面双引号需要替换为自己的GitHub注册邮箱账号。）</em></strong><br>为了简单起见，凡是窗口出现停顿需要输入信息的时候，默认直接回车即可，直到该指令完全执行完毕，如下图所示：<br><img src="1.png"><br>上图中框出的信息中指出了新生成的SSH密钥对所在位置，根据提示可以找到该位置，如下图所示：<br><img src="2.png"><br>可以看到该路径下总共有两个新生成的文件：</p><ul><li>id_rsa：里面保存的是<strong>私钥</strong>；</li><li>id_rsa.pub：里面保存的是<strong>公钥</strong>。</li></ul><h1 id="二、添加公钥"><a href="#二、添加公钥" class="headerlink" title="二、添加公钥"></a>二、添加公钥</h1><p>用Notepad++或记事本等文本编辑工具打开保存公钥的id_rsa.pub文件，如下图所示：<br><img src="3.png"><br>将里面所有内容直接全选，并复制到粘贴板中。</p><p>进入GitHub官网并登录后，点击网页右上角个人头像，在下拉选项中选择并点击“Settings”：<br><img src="4.png"><br>在接下来的网页左侧选择并点击“SSH and GPG keys”：<br><img src="5.png"><br>在接下来的网页右左侧点击“New SSH key”：<br><img src="6.png"><br>进入如下网页：<br><img src="7.png"></p><ul><li><strong>Title</strong>：这里的内容大家可以任意填写，后面也用不到；</li><li><strong>Key</strong>：在框内右击，将刚刚复制到粘贴板中的<strong>公钥</strong>粘贴进来；</li></ul><p>最后点击“Add SSH key”进行保存。保存成功后可以看到我们成功新增的这个SSH key：<br><img src="8.png"></p><h1 id="三、添加私钥"><a href="#三、添加私钥" class="headerlink" title="三、添加私钥"></a>三、添加私钥</h1><p>用Notepad++或记事本等文本编辑工具打开保存公钥的id_rsa文件，如下图所示：<br><img src="9.png"><br>将里面所有内容直接全选，并复制到粘贴板中。</p><p>在GitHub上面找到并进入我们保存Hexo源码目录的GitHub仓库：<br><img src="10.png"><br>然后依次点击“Settings”、“Secrets”和“New repository secret”，进入如下网页：<br><img src="11.png"></p><ul><li><strong>Name</strong>：这里的内容大家也是可以任意填写，但注意后面会需要用到；</li><li><strong>Value</strong>：在框内右击，将刚刚复制到粘贴板中的<strong>私钥</strong>粘贴进来；</li></ul><p>最后点击“Add secret”进行保存。保存成功后可以看到我们成功新增的这个secret：<br><img src="12.png"></p><h1 id="四、新增workflow文件"><a href="#四、新增workflow文件" class="headerlink" title="四、新增workflow文件"></a>四、新增workflow文件</h1><p>此时我们可以先去查看一下我们Hexo源码仓库的“Actions”，如下图所示：<br><img src="13.png"><br>从上图中可以看出，我们这个仓库还没有执行过任何的Actions。</p><p>我们进到电脑上本地的Hexo源码仓库，依次：</p><ul><li>在根目录下创建一个名为 <strong>.github</strong> 文件夹；</li><li>进入 <strong>.github</strong> 文件夹内，创建以一个名为 <strong>workflows</strong> 的文件夹；</li><li>进入 <strong>workflows</strong> 文件夹内，创建一个名为 <strong>.yml</strong> 后缀的文本文件（文件名可以任意取）；</li></ul><p>最后如下图所示：<br><img src="14.png"></p><p>这个.yml文件中的内容，大家可以参考我这里用的：<br>XXXXXXXXXXXXXXXX<br>XXXXXXXXXXXXXXXX<br>XXXXXXXXXXXXXXXX<br>XXXXXXXXXXXXXXXX<br>XXXXXXXXXXXXXXXX<br>XXXXXXXXXXXXXXXX<br>XXXXXXXXXXXXXXXX<br>XXXXXXXXXXXXXXXX<br>大家可以整体直接复制过去用，也可以根据自己的需求进行修改。</p><h1 id="五、触发自动部署"><a href="#五、触发自动部署" class="headerlink" title="五、触发自动部署"></a>五、触发自动部署</h1><p>在Hexo源码仓库的根目录下，通过Git Bash依次执行如下指令<br>git add .<br>git commit -m “add deploy.yml for GitHub Actions”<br>git push</p><p>即可将我们刚刚新增的workflow文件上传到GitHub上去，GitHub上检测到workflow文件后，就会触发自动部署。<br><strong><em>（主要就是根据workflow文件中制定的流程去执行相应的操作。）</em></strong><br>稍等一会儿后刷新我们前面查看Hexo源码仓库Actions的网页，如下图所示：<br><img src="15.png"><br>这就表示我们这第一次自动部署就成功了！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> personal website </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Personal website </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> GitHub Pages </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ZigBee 3.0学习教程-01：目录</title>
+      <link href="zigbee-3.0-1/"/>
+      <url>zigbee-3.0-1/</url>
+      
+        <content type="html"><![CDATA[<center>    <font size=4>        【配套<font color='red'><strong>源码</strong></font>、<font color='red'><strong>文档</strong></font>、<font color='red'><strong>软件</strong></font>、<font color='red'><strong>硬件</strong></font>等资源，请移步技术交流群：<font color='red'><strong>拿破仑ZigBee</strong></font>（263671349）】    </font></center><p>&nbsp;</p><p>本专题的目录安排如下：</p><ul><li>（点击链接-&gt;）<a href="https://oceanwang.top/zigbee-3.0-1/">ZigBee 3.0学习教程-01：目录</a></li><li>（点击链接-&gt;）<a href="https://oceanwang.top/zigbee-3.0-2/">ZigBee 3.0学习教程-02：基础知识-概述</a></li><li>（点击链接-&gt;）<a href="https://oceanwang.top/zigbee-3.0-3/">ZigBee 3.0学习教程-03：基础知识-协议架构</a></li><li>（点击链接-&gt;）<a href="https://oceanwang.top/zigbee-3.0-4/">ZigBee 3.0学习教程-04：基础知识-Cluster与ZCL规范</a></li><li>（点击链接-&gt;）<a href="https://oceanwang.top/zigbee-3.0-5/">ZigBee 3.0学习教程-05：基础知识-安全加密</a></li><li>（点击链接-&gt;）<a href="https://oceanwang.top/zigbee-3.0-6/">ZigBee 3.0学习教程-06：基础知识-建网与组网</a></li></ul><p><img src="%E6%8B%BF%E7%A0%B4%E4%BB%91ZigBee.jpg"></p><center>    <font size=4>        【配套<font color='red'><strong>源码</strong></font>、<font color='red'><strong>文档</strong></font>、<font color='red'><strong>软件</strong></font>、<font color='red'><strong>硬件</strong></font>等资源，请移步技术交流群：<font color='red'><strong>拿破仑ZigBee</strong></font>（263671349）】    </font></center>]]></content>
+      
+      
+      <categories>
+          
+          <category> zigbee 3.0 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ZigBee 3.0 </tag>
+            
+            <tag> Z-Stack </tag>
+            
+            <tag> EmberZnet </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建个人博客网站教程-01：目录</title>
+      <link href="personal-website-1/"/>
+      <url>personal-website-1/</url>
+      
+        <content type="html"><![CDATA[<p>本专题的目录安排如下：</p><ul><li>（点击链接-&gt;）<a href="https://oceanwang.top/personal-website-1/">搭建个人博客网站教程-01：目录</a></li><li>（点击链接-&gt;）<a href="https://oceanwang.top/personal-website-2/">搭建个人博客网站教程-02：静态网页搭建博客网站原理解析</a></li><li>（点击链接-&gt;）<a href="https://oceanwang.top/personal-website-3/">搭建个人博客网站教程-03：十大常用静态网页生成工具</a></li><li>（点击链接-&gt;）<a href="https://oceanwang.top/personal-website-4/">搭建个人博客网站教程-04：六大常用静态网站托管平台</a></li><li>（点击链接-&gt;）<a href="https://oceanwang.top/personal-website-5/">搭建个人博客网站教程-05：Hexo+GitHub Pages：搭建全局环境</a></li><li>（点击链接-&gt;）<a href="https://oceanwang.top/personal-website-6/">搭建个人博客网站教程-06：Hexo+GitHub Pages：搭建局部环境+运行验证</a></li><li>（点击链接-&gt;）<a href="https://oceanwang.top/personal-website-7/">搭建个人博客网站教程-07：Hexo+GitHub Pages：将网站部署到GitHub Pages上</a></li><li>（点击链接-&gt;）<a href="https://oceanwang.top/personal-website-8/">搭建个人博客网站教程-08：Hexo+GitHub Pages：用Git管理Hexo源码</a></li><li>（点击链接-&gt;）<a href="https://oceanwang.top/personal-website-9/">搭建个人博客网站教程-09：Hexo+GitHub Pages：更换Hexo主题（简单方式）</a></li><li>（点击链接-&gt;）<a href="https://oceanwang.top/personal-website-10/">搭建个人博客网站教程-10：Hexo+GitHub Pages：更换Hexo主题（submodule方式）</a></li><li>（点击链接-&gt;）<a href="https://oceanwang.top/personal-website-11/">搭建个人博客网站教程-11：Hexo+GitHub Pages：日常写作与网站部署</a></li><li>（点击链接-&gt;）<a href="https://oceanwang.top/personal-website-12/">搭建个人博客网站教程-12：Hexo+GitHub Pages：解析域名</a></li><li>（点击链接-&gt;）<a href="https://oceanwang.top/personal-website-13/">搭建个人博客网站教程-13：Hexo+GitHub Pages：增加www域名解析</a></li><li>（点击链接-&gt;）<a href="https://oceanwang.top/personal-website-14/">搭建个人博客网站教程-14：Hexo+GitHub Pages：GitHub Actions自动部署</a></li><li>（点击链接-&gt;）<a href="https://oceanwang.top/personal-website-15/">搭建个人博客网站教程-15：Hexo+GitHub Pages：多电脑多用户协同创作</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> personal website </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Personal website </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> GitHub Pages </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建个人博客网站教程-02：静态网页搭建博客网站原理解析</title>
+      <link href="personal-website-2/"/>
+      <url>personal-website-2/</url>
+      
+        <content type="html"><![CDATA[<p>在个人网站博客的开发过程中，我们主要会涉及到两个目录：</p><ul><li>一个目录用来存放hexo源码文件，主要包括我们平时写文章用到的文字、图片、主题等等，我们姑且称之为<strong>“源码目录”</strong>；</li><li>一个目录用来存放通过hexo源码文件编译生成的静态网页文件，这些文件主要用来部署网站，我们姑且称之为<strong>“部署目录”</strong>。</li></ul><h1 id="一、Hexo源码与网站部署解析"><a href="#一、Hexo源码与网站部署解析" class="headerlink" title="一、Hexo源码与网站部署解析"></a>一、Hexo源码与网站部署解析</h1><p><strong>为了更加现代化地进行创作，比如团队多作者协同创作、单用户多计算机创作、在线创作等等。</strong>使用Git对上述“源码目录”和“部署目录”进行有效管理是一条必经之路。如何使用Git对“源码目录”和“部署目录”进行有效管理，粗略可以分为如下两种方式。</p><h2 id="1-1-两个Git仓库管理"><a href="#1-1-两个Git仓库管理" class="headerlink" title="1.1 两个Git仓库管理"></a>1.1 两个Git仓库管理</h2><p>一般最简单的办法，就是创建两个Git仓库，一个用来存放“源码目录”，另一个用来存放“部署目录”。这种方式在逻辑上理解起来最为容易，对于新手来说也非常推荐使用这种方式。然后由于实际需要维护两个Git仓库，个人觉得不够精简。</p><h2 id="1-2-单一Git仓库管理"><a href="#1-2-单一Git仓库管理" class="headerlink" title="1.2 单一Git仓库管理"></a>1.2 单一Git仓库管理</h2><p>另一种方式就是将这两个Git仓库合二为一，使用一个仓库同时存放“源码目录”和“部署目录”，依靠Git仓库中不同的分支来进行区分。这种方式在逻辑上理解起来稍微复杂一些，对于创作者在Git的理解和使用上的要求也稍微高一些。但一旦掌握之后，会比上面一种方式要更加高效一些。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> personal website </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Personal website </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> GitHub Pages </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建个人博客网站教程-03：十大常用静态网页生成工具</title>
+      <link href="personal-website-3/"/>
+      <url>personal-website-3/</url>
+      
+        <content type="html"><![CDATA[<p>正在加紧更新中…</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> personal website </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Personal website </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> GitHub Pages </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建个人博客网站教程-04：六大常用静态网站托管平台</title>
+      <link href="personal-website-4/"/>
+      <url>personal-website-4/</url>
+      
+        <content type="html"><![CDATA[<p>正在加紧更新中…</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> personal website </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Personal website </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> GitHub Pages </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建个人博客网站教程-05：Hexo+GitHub Pages：搭建全局环境</title>
+      <link href="personal-website-5/"/>
+      <url>personal-website-5/</url>
+      
+        <content type="html"><![CDATA[<p><strong><em>（注：此处仅以Windows系统下的安装为例）</em></strong></p><h1 id="一、安装Git环境"><a href="#一、安装Git环境" class="headerlink" title="一、安装Git环境"></a>一、安装Git环境</h1><h2 id="1-1-获取Git安装包"><a href="#1-1-获取Git安装包" class="headerlink" title="1.1 获取Git安装包"></a>1.1 获取Git安装包</h2><p>百度搜索“git”，搜索结果如下图所示：<br><img src="git/1.png"><br>选择并点击“git官网”，或直接访问<a href="https://git-scm.com/">https://git-scm.com/</a><br>进入如下图所示界面：<br><img src="git/2.png"><br>点击“Download 2.30.0 for Windows”，进入如下图所示界面：<br><img src="git/3.png"><br>正常情况下，浏览器会自动弹出git安装文件的下载窗口，直接下载即可。<br>如果没有自动弹出弹窗，则点击“64-bit Git for Windows Setup”手动进行下载。</p><p>如果下载速度很慢的话，大家也可以通过本文文首或者文末的百度网盘链接进行下载~</p><p><strong><em>（注：截止至本文发布时，最新版本的Git软件为“Git-2.30.0.2-64-bit.exe”，所以网盘中分享的也是这个版本）</em></strong></p><p>下载完成后，会得到如下图所示这样的一个文件：<br><img src="git/4.png"></p><h2 id="1-2-安装Git-Windows客户端"><a href="#1-2-安装Git-Windows客户端" class="headerlink" title="1.2 安装Git Windows客户端"></a>1.2 安装Git Windows客户端</h2><p>双击运行上图所示的安装文件，弹出窗口如下图所示：<br><img src="git/5.png"></p><p>接下来的安装步骤很简单，如果没有特殊需求的话，按照提示一路默认操作即可。直至弹出如下图所示的窗口：<br><img src="git/6.png"></p><h2 id="1-3-检查Git环境"><a href="#1-3-检查Git环境" class="headerlink" title="1.3 检查Git环境"></a>1.3 检查Git环境</h2><p>Git软件安装完成后，在电脑上任意位置，鼠标右键单击，可以看到比之前多出来了“Git GUI Here”和“Git Bash Here”两个选项，如下图所示：<br><img src="git/7.png"></p><p>这里我们单击选择“Git Bash Here”，Git Bash窗口会自动弹出，如下图所示：<br><img src="git/8.png"></p><p>在该窗口中，我们通过输入如下指令并回车，来检查Git环境是否安装成功：<br>git –version</p><p>我这边显示的情况如下图所示：<br><img src="git/9.png"><br>只要能显示出类似“git version 2.30.0.windows.2”的信息，就表示当前电脑上Git环境已经安装好了。</p><h1 id="二、安装Node-js环境"><a href="#二、安装Node-js环境" class="headerlink" title="二、安装Node.js环境"></a>二、安装Node.js环境</h1><p>一个能够在服务器端运行JavaScript代码的环境，主要是为了使用它的包管理工具npm，所以不需要先系统的学习node.js的知识。npm是node.js的包管理工具，跟Python的pip工具作用一样，可以用它来安装依赖库和三方工具。我们主要是使用npm来安装Hexo。</p><h2 id="2-1-获取Node-js安装包"><a href="#2-1-获取Node-js安装包" class="headerlink" title="2.1 获取Node.js安装包"></a>2.1 获取Node.js安装包</h2><p>百度搜索“node.js”，搜索结果如下图所示：<br><img src="node.js/1.png"></p><p>选择并点击“node.js官网”，或直接访问<a href="https://nodejs.org/zh-cn/">https://nodejs.org/zh-cn/</a></p><p>可以看到如下图所示界面：<br><img src="node.js/2.png"></p><p>可以看到官网有两个版本的Node.js可以选择，这里我选择下载的是当前最新的版本。单击即可下载对应版本的Node.js。<br>如果下载速度很慢的话，大家也可以通过本文文首或者文末的百度网盘链接进行下载~<br>下载完成后，会得到一个以msi尾缀结尾的文件，如下图所示：<br><img src="node.js/3.png"></p><h2 id="2-2-安装Node-js"><a href="#2-2-安装Node-js" class="headerlink" title="2.2 安装Node.js"></a>2.2 安装Node.js</h2><p>双击运行上图所示的安装文件，弹出窗口如下图所示：<br><img src="node.js/4.png"></p><p>接下来的安装步骤很简单，如果没有特殊需求的话，按照提示一路默认操作即可。直至弹出如下图所示的窗口：<br><img src="node.js/5.png"></p><h2 id="2-3-查询Node-js版本"><a href="#2-3-查询Node-js版本" class="headerlink" title="2.3 查询Node.js版本"></a>2.3 查询Node.js版本</h2><p>在电脑上任意空白位置单击鼠标右键，并选择“Git Bash Here”，输入如下指令并回车：<br>node –version</p><p>如果得到如下图所示结果：<br><img src="node.js/6.png"><br>如果返回结果提示类似“v15.6.0”的信息，就表示当前电脑上Node.js环境已经安装好了。</p><p>如果得到如下图所示结果：<br><img src="node.js/7.png"><br>如果返回结果提示“bash: node: command not found”，首先查看电脑上是否有早先打开的Git Bash窗口，如果有，尝试将所有的Git Bash窗口关闭再重新打开，然后再尝试查询Node.js的版本信息。如果还是失败，建议重新再进行一遍安装操作。</p><h2 id="2-4-查询npm版本"><a href="#2-4-查询npm版本" class="headerlink" title="2.4 查询npm版本"></a>2.4 查询npm版本</h2><p>一般在安装Node.js的同时，npm也会被一起安装了。我们可以输入如下指令并回车，来查询npm的版本：<br>npm –version<br><img src="node.js/8.png"><br>由上图可以看出与Node.js一起被安装的npm的版本为7.4.0。</p><h1 id="三、安装Hexo"><a href="#三、安装Hexo" class="headerlink" title="三、安装Hexo"></a>三、安装Hexo</h1><h2 id="3-1-安装Hexo"><a href="#3-1-安装Hexo" class="headerlink" title="3.1 安装Hexo"></a>3.1 安装Hexo</h2><p>在电脑上任意空白位置单击鼠标右键，并选择“Git Bash Here”，输入如下指令并回车，以开始安装Hexo：<br>npm install hexo-cli -g<br>等Hexo安装完成之后，Git Bash中显示如下图所示：<br><img src="hexo/1.png"></p><h2 id="3-2-查询Hexo版本"><a href="#3-2-查询Hexo版本" class="headerlink" title="3.2 查询Hexo版本"></a>3.2 查询Hexo版本</h2><p>在Git Bash中输入如下指令并回车：<br>hexo version</p><p>如果得到如下图所示或类似的结果：<br><img src="hexo/2.png"><br>就表示当前电脑上Hexo的环境已经安装好了。</p><p>如果得到如下图所示或类似的结果：<br><img src="hexo/3.png"><br>就表示Hexo的安装失败了，建议重新再进行一遍安装操作。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> personal website </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Personal website </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> GitHub Pages </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建个人博客网站教程-06：Hexo+GitHub Pages：搭建局部环境+运行验证</title>
+      <link href="personal-website-6/"/>
+      <url>personal-website-6/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、创建Hexo源码文件夹"><a href="#一、创建Hexo源码文件夹" class="headerlink" title="一、创建Hexo源码文件夹"></a>一、创建Hexo源码文件夹</h1><p>在确保完成了Git、Node.js、Hexo等软件环境的安装之后，我们需要通过如下格式的指令来创建hexo源码文件夹，用于存放个人网站博客的所有源码文件：<br>hexo init &lt;hexo源码文件夹&gt;</p><p>这里为了和将来要部署到GitHub Pages上的站点GitHub仓库名保持一致，故我这里将&lt;hexo源码文件夹&gt;命名为&lt;GitHub用户名.github.io&gt;，我的GitHub用户名为Napoleon940911，所以我这边需要输入的完整指令为：<br>hexo init Napoleon940911.github.io</p><p><strong><em>（这里的&lt;hexo源码文件夹&gt;大家其实可以自由命名，不一定非要按我这种命名方式）</em></strong></p><p>我们需要在电脑上选择一个合适的位置，来创建这个hexo源码文件夹，大家根据自己的实际情况选择即可。这里我选择的是如下目录：<br><img src="1.png"></p><p>在如下目录中的空白处打开鼠标右键，选择“Git Bash Here”，输入如下指令并回车进行创建：<br>hexo init Napoleon940911.github.io<br>命令执行结束后，Git Bash窗口内容如下图所示：<br><img src="2.png"><br>表示hexo源码文件夹创建成功了。同时电脑上相应的目录下会多出一个刚刚新建的文件夹，如下图所示：<br><img src="3.png"></p><h1 id="二、进入这个文件夹"><a href="#二、进入这个文件夹" class="headerlink" title="二、进入这个文件夹"></a>二、进入这个文件夹</h1><p>创建hexo源码文件夹完成后，进入新建的这个文件夹后可以看到里面默认已经有如下一些文件和文件夹了：<br><img src="4.png"></p><p>同样，我们需要在Git Bash窗口中输入如下指令并回车进入到该目录下，才能进行后续操作：<br>cd &lt;hexo源码文件夹&gt;<br>cd Napoleon940911.github.io<br><img src="5.png"></p><h1 id="三、安装项目所需的依赖项"><a href="#三、安装项目所需的依赖项" class="headerlink" title="三、安装项目所需的依赖项"></a>三、安装项目所需的依赖项</h1><p>进入hexo源码文件夹后，需要通过输入如下指令来安装项目所需的依赖项：<br>npm install<br><img src="6.png"><br>安装完成后，会得到如上图所示的内容。</p><h1 id="四、安装一键部署插件"><a href="#四、安装一键部署插件" class="headerlink" title="四、安装一键部署插件"></a>四、安装一键部署插件</h1><p>后面需要将我们的个人博客网站部署到诸如GitHub Pages这样的地方，必须安装hexo的部署插件hexo-deployer-git才可以实现。在Git Bash窗口中输入如下指令并回车：<br>npm install hexo-deployer-git –save<br><img src="7.png"><br>安装完成后，会得到如上图所示的内容。</p><h1 id="五、运行验证"><a href="#五、运行验证" class="headerlink" title="五、运行验证"></a>五、运行验证</h1><h2 id="5-1-启动Hexo服务器"><a href="#5-1-启动Hexo服务器" class="headerlink" title="5.1 启动Hexo服务器"></a>5.1 启动Hexo服务器</h2><p>上面的步骤全部完成后，博客的局部环境就搭建完毕了。但是最终成功与否，还是需要来实际运行验证一下看看。<br>这里我们在Git Bash窗口中输入如下指令并回车：<br>hexo server -o</p><p>如果出现如下图所示的警告窗口，点击“允许访问”即可：<br><img src="8.png"></p><p>耐心地等待一会儿之后，我们会看到如下图所示的界面：<br><img src="9.png"></p><p>上图中主要说明了2点信息：</p><ul><li>我们的个人博客网站的允许地址为<a href="http://localhost:4000；">http://localhost:4000；</a></li><li>如果我们要停止运行，按下Ctrl+C即可。</li></ul><p><strong><em>（如果出现类似上图中框出的Warning信息，忽略即可，不用关心）</em></strong></p><p>与此同时，我们会看到电脑的默认浏览器会自动弹出一个网页，浏览器中的地址就是上面提示的<a href="http://localhost:4000，网页上运行的就是我们刚刚搭建的个人博客网站。详情如下图所示：">http://localhost:4000，网页上运行的就是我们刚刚搭建的个人博客网站。详情如下图所示：</a><br><img src="10.png"></p><h2 id="5-2-停止Hexo服务器"><a href="#5-2-停止Hexo服务器" class="headerlink" title="5.2 停止Hexo服务器"></a>5.2 停止Hexo服务器</h2><p>当我们在Git Bash窗口中按下Crtl+C后，将会让服务器停止运行。如下图所示：<br><img src="11.png"><br>得到一串类似“Have a nice day”的字符提示。</p><p>此时若是刷新刚刚的网页，自然也是显示不出来了。重新启动 Hexo 服务器之后，我们将又可以进入刚刚的网页了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> personal website </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Personal website </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> GitHub Pages </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建个人博客网站教程-07：Hexo+GitHub Pages：将网站部署到GitHub Pages上</title>
+      <link href="personal-website-7/"/>
+      <url>personal-website-7/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、注册GitHub账号"><a href="#一、注册GitHub账号" class="headerlink" title="一、注册GitHub账号"></a>一、注册GitHub账号</h1><p>后面要将我们的个人博客网站部署到GitHub Pages上，拥有一个GitHub账户自然就是最基本的前提了。</p><p>百度搜索“gitub”，搜索结果如下图所示：<br><img src="1.png"><br>选择并点击“GitHub Build software better, together.”，或直接访问<a href="https://github.com/">https://github.com/</a><br>进入如下图所示界面：<br><img src="2.png"></p><ul><li>如果是第一次使用GitHub，点击“Sign up”进行注册；</li><li>如果以前使用过GitHub，点击“Sign in”登录即可。</li></ul><h1 id="二、创建部署目录仓库"><a href="#二、创建部署目录仓库" class="headerlink" title="二、创建部署目录仓库"></a>二、创建部署目录仓库</h1><p>按照官方说明的使用规则，如果使用GitHub Pages进行网站部署的话，所建仓库必须要取名为“GitHub用户名.github.io”。因为我的GitHub用户名为Napoleon940911，所以我的这个仓库应取名为“Napoleon940911.github.io”。</p><p>在GitHub官网（<a href="https://github.com/%EF%BC%89%E4%B8%8A%E6%88%90%E5%8A%9F%E7%99%BB%E5%BD%95%E5%90%8E%EF%BC%8C%E6%89%BE%E5%88%B0%E5%B9%B6%E7%82%B9%E5%87%BB%E7%BD%91%E9%A1%B5%E5%B7%A6%E4%B8%8A%E6%96%B9%E7%9A%84%E2%80%9CNew%E2%80%9D%EF%BC%9A">https://github.com/）上成功登录后，找到并点击网页左上方的“New”：</a><br><img src="3.png"><br>从而进入如下网页：<br><img src="4.png"><br>依次：</p><ul><li>在上图所示的“Repository name”方框中填入仓库名称；</li><li>勾选“Add a README file”；</li><li>点击“Create repository”。<br>即可完成该仓库的创建（简单起见，其余所有内容均保持默认）。</li></ul><p><strong><em>注意：一定要勾选“Add a README file”，不然后面会看不到GitHub Pages的域名和部署分支</em></strong></p><h1 id="三、访问GitHub-Pages"><a href="#三、访问GitHub-Pages" class="headerlink" title="三、访问GitHub Pages"></a>三、访问GitHub Pages</h1><p>该仓库创建成功后，会进入如下图所示网页：<br><img src="5.png"></p><p>点击上图中的“Settings”，将所进入的网页滚轮移动至GitHub Pages相关的部分，如下图所示：<br><img src="6.png"><br>从上图中可以看出，GitHub Pages给我们提供了一个格式为<a href="https://github用户名.github.io/">https://GitHub用户名.github.io</a> 的免费域名，并且相应的网站是从该仓库的 main 分支构建得到的。</p><p>我们直接点击上图中的这个域名，或是将这个域名（<a href="https://napoleon940911.github.io/%EF%BC%89%E8%BE%93%E5%85%A5%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E5%9C%B0%E5%9D%80%E6%A0%8F%E5%B9%B6%E5%9B%9E%E8%BD%A6%EF%BC%8C%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%88%B0%E5%A6%82%E4%B8%8B%E5%9B%BE%E6%89%80%E7%A4%BA%E7%9A%84%E7%95%8C%E9%9D%A2%EF%BC%9A">https://napoleon940911.github.io/）输入浏览器的地址栏并回车，可以看到如下图所示的界面：</a><br><img src="7.png"><br>如果你成功看到上图这样的界面，那么恭喜你已经拥有一个自己专属的网站了！！！</p><h1 id="四、设置部署仓库和分支"><a href="#四、设置部署仓库和分支" class="headerlink" title="四、设置部署仓库和分支"></a>四、设置部署仓库和分支</h1><p>回到我们前面创建的Hexo源码目录，用Notepad++或记事本等文本编辑工具打开根目录下面的 _config.yml 文件，并滚动到文件最后，可以看到如下图所示内容：<br><img src="8.png"></p><p>将上图中这部分的内容更改为如下图所示：<br><img src="9.png"></p><p>关于上图中“repo”内容的获取，如下图所示：<br><img src="10.png"><br>依次点击上图中3个圈出的位置，即可将我们需要的信息添加到<strong>剪切板</strong> 里面，直接粘贴到前面提到的 _config.yml 文件中最后的**repo:**后面即可。</p><p>关于branch的填写，必须要和<a href="https://github.com/Napoleon940911/Napoleon940911.github.io/settings">https://github.com/Napoleon940911/Napoleon940911.github.io/settings</a> 中GitHub Pages部分指定的<strong>Branch</strong>保持一致。<br>保存_config.yml文件，并退出。</p><h1 id="五、生成静态网页文件"><a href="#五、生成静态网页文件" class="headerlink" title="五、生成静态网页文件"></a>五、生成静态网页文件</h1><p>在Git Bash窗口中输入如下指令并回车，将Hexo源码目录中已有的源码编译生成为静态网页文件：<br>hexo generate<br>该指令执行完成后，如下图所示：<br><img src="11.png"></p><p>与此同时，可以看到Hexo源码目录中新增了一个名为db.json的文件，以及一个名为public的文件夹，如下图所示。<br><img src="12.png"></p><ul><li>db.json文件：编译过程中产生的中间文件，不用关心；</li><li>public文件夹：新生成的静态网页文件就存放在这个目录下。</li></ul><p>点进public文件夹可以看到：<br><img src="13.png"><br>这些就是刚刚编译生成的静态网页文件。</p><h1 id="六、部署到GitHub-Pages上"><a href="#六、部署到GitHub-Pages上" class="headerlink" title="六、部署到GitHub Pages上"></a>六、部署到GitHub Pages上</h1><p>在Git Bash窗口中输入如下指令并回车，将刚刚新生产的静态网页文件推送到GitHub Pages：<br>hexo deploy<br>该指令执行完成后，如下图所示：<br><img src="14.png"><br>上图中最后一行提示 Deploy done，意味着我们部署成功了！</p><h1 id="七、再次访问GitHub-Pages"><a href="#七、再次访问GitHub-Pages" class="headerlink" title="七、再次访问GitHub Pages"></a>七、再次访问GitHub Pages</h1><p>这时，我们再去访问我们前面得到的 GitHub Pages（<a href="https://napoleon940911.github.io/%EF%BC%89">https://napoleon940911.github.io/）</a> 。会发现原来几乎空白的网页，已经变成了前面我们在本地通过 <a href="http://localhost:4000/">http://localhost:4000</a> 所访问到的网页了！如下图所示：<br><img src="15.png"></p><p>如果测试发现 GitHub Pages 还是没有任何变化，不要着急，等几分钟之后再次刷新即可。</p><p>至此，我们就已经成功将本地的 Hexo 仓库部署到 GitHub 上了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> personal website </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Personal website </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> GitHub Pages </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建个人博客网站教程-08：Hexo+GitHub Pages：用Git管理Hexo源码</title>
+      <link href="personal-website-8/"/>
+      <url>personal-website-8/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、新建GitHub仓库"><a href="#一、新建GitHub仓库" class="headerlink" title="一、新建GitHub仓库"></a>一、新建GitHub仓库</h1><p>这里新建GitHub仓库的步骤，大体上跟之前是一样的，相同的部分这里就不再重复。只是做几点提示：</p><ul><li>这里的仓库命名没有任何限制，大家根据个人喜好自由命名即可；</li><li>稍后我们要将本地的Hexo源码目录同步到GitHub上来，建议不要勾选添加README等任何文件。</li></ul><p>这里我为了和前面创建的本地Hexo源码文件夹名称保持一致，将该仓库取名为：Napoleon940911-Hexo。新建好的仓库如下图所示：<br><img src="1.png"></p><h1 id="二、将本地Hexo源码目录同步到远程GitHub仓库"><a href="#二、将本地Hexo源码目录同步到远程GitHub仓库" class="headerlink" title="二、将本地Hexo源码目录同步到远程GitHub仓库"></a>二、将本地Hexo源码目录同步到远程GitHub仓库</h1><p>回到本地Hexo源码目录下，在Git Bash窗口中依次执行如下6条Git指令，将本地Hexo源码目录同步到远程GitHub仓库，<br>git init<br>git add .<br>git commit -m “first commit”<br>git branch -M main<br>git remote add origin <a href="mailto:&#103;&#105;&#x74;&#x40;&#103;&#105;&#x74;&#104;&#117;&#98;&#46;&#99;&#x6f;&#x6d;">&#103;&#105;&#x74;&#x40;&#103;&#105;&#x74;&#104;&#117;&#98;&#46;&#99;&#x6f;&#x6d;</a>:Napoleon940911/Napoleon940911-Hexo.git<br>git push -u origin main</p><p>执行完成后，Git Bash窗口如下图所示：<br><img src="2.png"></p><p>此时Hexo源码目录下多了一个.git的文件夹：<br><img src="3.png"><br><strong><em>（需要使能Windows显示“隐藏的项目”才能看得到）</em></strong><br>表示该Hexo源码目录已经变成了一个Git仓库。</p><p>此时去刷新一下我们刚刚新建的GitHub仓库所在的网页，可以看到本地Hexo源码目录已经完全同步到远程的GitHub仓库了：<br><img src="4.png"></p><p>以后大家就可以使用Git对Hexo源码目录进行高效的管理了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> personal website </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Personal website </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> GitHub Pages </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建个人博客网站教程-09：Hexo+GitHub Pages：更换Hexo主题（简单方式）</title>
+      <link href="personal-website-9/"/>
+      <url>personal-website-9/</url>
+      
+        <content type="html"><![CDATA[<p>既然已经搭建好了我们的个人网站，接下来就可以做点稍微有意思点的事情了。比如：给我们的个人博客网站换个主题！</p><p>最开始我们在通过**hexo init &lt;hexo源码文件夹&gt;**指令创建Hexo源码文件夹的时候，默认下载的主题是 landscape，如下图所示：<br><img src="1.png"></p><p>我们也不能说它丑，其实还看得过去，毕竟是官方默认的，姑且称之为经典吧。但是，确实不是很好看。好了，下面开始正题。</p><h1 id="一、挑选主题"><a href="#一、挑选主题" class="headerlink" title="一、挑选主题"></a>一、挑选主题</h1><p>官方地址：<a href="https://hexo.io/themes/">https://hexo.io/themes/</a><br><img src="2.png"></p><p>从上图中可以看到，截止至本篇博文发布之时，官方总共提供了330个主题供大家选择。</p><p>如果要说有没有什么选择的原则，应该是没有的吧，关键是要自己看着喜欢，最好是一见钟情的那种，毕竟它将会作为你个人网站的的主题，代表你个人的风格，很可能成为别人对你的第一印象。</p><p>做为一个严重强迫症患者，我硬是把官网提供的330个主题全部点开看了一遍，花了几个小时经过好几轮筛选，才最终选定！非常不值得大家借鉴！大家选的自己看着开心就好~</p><h1 id="二、下载主题"><a href="#二、下载主题" class="headerlink" title="二、下载主题"></a>二、下载主题</h1><p>我最终选定的是下面这个名为Matery的主题：<br><img src="3.png"></p><p>选定主题后，点击图片，可以直接进入该主题作者基于该主题已经开发好了的个人网站：<a href="https://blinkfox.github.io/">https://blinkfox.github.io/</a><br>如下图所示：<br><img src="4.png"></p><p>点击上一幅图上蓝色加粗的<strong>Matery</strong>，可以进入该主题的源码仓库：<a href="https://github.com/blinkfox/hexo-theme-matery%EF%BC%8C%E5%A6%82%E4%B8%8B%E5%9B%BE%E6%89%80%E7%A4%BA%EF%BC%9A">https://github.com/blinkfox/hexo-theme-matery，如下图所示：</a><br><img src="5.png"></p><p>依此点击上图中的红色圈出的部分，便可获得该主题仓库的下载链接至剪切板。</p><p>回到我们本地的Hexo源码目录，进入根目录下的themes目录，在空白处右击打开Git Bash窗口，输入如下指令并回车以开始下载我们选定的主题：<br>git clone <a href="mailto:&#103;&#105;&#116;&#x40;&#103;&#105;&#116;&#x68;&#117;&#98;&#46;&#99;&#111;&#109;">&#103;&#105;&#116;&#x40;&#103;&#105;&#116;&#x68;&#117;&#98;&#46;&#99;&#111;&#109;</a>:blinkfox/hexo-theme-matery.git<br><strong><em>大家需要将指令中的链接替换成自己选中的主题的下载链接</em></strong></p><p>该主题下载完成后，Git Bash窗口中如下图所示：<br><img src="6.png"></p><p>与此同时可以看到themes目录下多出来了一个hexo-theme-matery的文件夹：<br><img src="7.png"><br>这里面就是我们新下载的主题的所有源码。</p><h1 id="三、更改主题配置"><a href="#三、更改主题配置" class="headerlink" title="三、更改主题配置"></a>三、更改主题配置</h1><p>回到Hexo源码目录的根目录下，找到站点配置文件<strong>_config.yml</strong>，用Notepad++或记事本 等文本编辑工具打开，找到主题配置部分，如下图所示：<br><img src="8.png"></p><p>将上图中原来的主题名称<strong>landscape</strong>，直接改为我们刚刚下载下来的主题所在的文件夹名称<strong>hexo-theme-matery</strong>（这里其实也可以改为 matery，但也必须将主题所在文件夹的名称也改为 matery，保持一致即可）。如下图所示：<br><img src="9.png"></p><p>保存并退出。</p><h1 id="四、本地预览"><a href="#四、本地预览" class="headerlink" title="四、本地预览"></a>四、本地预览</h1><p>主题更改完成之后，我们可以先在本地预览一下效果怎么样。</p><p>回到Hexo源码目录的根目录下，打开Git Bash窗口输入如下指令并回车，进行本地预览：<br>hexo server -o</p><p>在弹出的浏览器窗口中，我们可以看到更改了主题之后我们个人博客网站全新的主题效果：<br><img src="10.png"></p><p>仔细看发现主页还会变色，哈哈~<br>页面向下滚动，效果如下图所示：<br><img src="11.png"></p><h1 id="五、网站部署"><a href="#五、网站部署" class="headerlink" title="五、网站部署"></a>五、网站部署</h1><p>完成预览后，后续大家就可以生成静态网页并进行网站部署了。</p><p>这部分内容以及后续访问测试GitHub Pages等，前面文章中已经详细介绍过，这里就不再重复了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> personal website </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Personal website </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> GitHub Pages </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建个人博客网站教程-10：Hexo+GitHub Pages：更换Hexo主题（submodule方式）</title>
+      <link href="personal-website-10/"/>
+      <url>personal-website-10/</url>
+      
+        <content type="html"><![CDATA[<p>前面《09-搭建个人博客网站：Hexo+GitHub Pages入门：更换Hexo主题（简单方式）》一文中，用最简单的方式介绍了一下如何更换主题。这样操作起来短期之类看确实挺简单的，但是长远来看会带了一个问题：</p><p>主题作者如果有了更新（可能是新增功能，也可能是修复bug等等）</p><p>仅仅是“下载主题”这一步升级了一下，其余所有步骤保持不变。</p><h1 id="一、新建GitHub仓库"><a href="#一、新建GitHub仓库" class="headerlink" title="一、新建GitHub仓库"></a>一、新建GitHub仓库</h1><p>删除刚刚下载在themes目录下的hexo-theme-matery文件夹<br><img src="1.png"></p><p>fork 原作者的主题仓库<br><img src="2.png"><br><img src="3.png"></p><p>获取新fork的仓库地址<br><img src="4.png"></p><p>git submodule add <a href="mailto:&#103;&#105;&#x74;&#64;&#103;&#105;&#x74;&#104;&#117;&#x62;&#x2e;&#x63;&#x6f;&#109;">&#103;&#105;&#x74;&#64;&#103;&#105;&#x74;&#104;&#117;&#x62;&#x2e;&#x63;&#x6f;&#109;</a>:Napoleon940911/hexo-theme-matery.git themes/hexo-theme-matery<br><img src="5.png"></p><p>新增了一个文件夹<br><img src="6.png"></p><p>新增了一个文件<br><img src="7.png"></p><p>文件内容<br><img src="8.png"></p><p>查看当前Hexo源码目录的变动情况<br><img src="9.png"></p><p>git commit -m “add submodule: themes/hexo-theme-matery”<br>git add _config.yml<br>git commit -m “changes theme from landscape to hexo-theme-matery”<br>git push</p><p>进行本地预览和网站部署，效果和之前是一模一样的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> personal website </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Personal website </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> GitHub Pages </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建个人博客网站教程-11：Hexo+GitHub Pages：日常写作与网站部署</title>
+      <link href="personal-website-11/"/>
+      <url>personal-website-11/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、静态网页来源解析"><a href="#一、静态网页来源解析" class="headerlink" title="一、静态网页来源解析"></a>一、静态网页来源解析</h1><p>一般来说，我们新增用来生成静态网页的资源都是放在Hexo源码目录下的source/_posts目录下的。<br>进入该目录之后，我们可以看到有一个hello-world.md文件：<br><img src="1.png"></p><p>通过Notepad++等文本编辑器打开可以看到里面的内容：<br><img src="2.png"><br>这就是我们前面在浏览器里面看到的网页的markdown源码。</p><p>很容易理解，我们只要将编写好的Markdown文件拷贝到source/_posts目录下，或是直接在该目录下编写Markdown文件，之后就可以生成相应的静态网页了。</p><h1 id="二、编写Markdown文件"><a href="#二、编写Markdown文件" class="headerlink" title="二、编写Markdown文件"></a>二、编写Markdown文件</h1><p>简单起见，这里我就直接在source/_posts目录下新建一个文本文件，然后重命名为<strong>。md文件</strong>。如下图所示：<br><img src="3.png"></p><p>通过Notepad++等文本编辑器打开后，按照Markdown语法，参考已有的hello-world.md文件内容的格式，增加如下文本内容：<br><img src="4.png"><br>保存并退出。</p><h1 id="三、本地预览"><a href="#三、本地预览" class="headerlink" title="三、本地预览"></a>三、本地预览</h1><p>一般来说，我们一篇文章写完之后，在进行远程部署之前，都建议先在本地预览一下，看一下显示效果是否符合我们的预期。这里我们输入如下指令并回车，进行本地预览：<br>hexo server -o<br>很快就会有一个默认浏览器的窗口自动弹出，上面就显示了我们整个个人博客网站的预览效果：<br><img src="5.png"></p><p>大家可以浏览并检查一下。</p><h1 id="四、网站部署"><a href="#四、网站部署" class="headerlink" title="四、网站部署"></a>四、网站部署</h1><p>新写的文章本地预览完成，觉得没问题了之后，就可以通过依次执行如下两条指令，将基于本地的Hexo源码目录生成静态网页并部署到GitHub Pages上了：<br>hexo generate<br>hexo deploy</p><p>这部分内容以及后续访问测试GitHub Pages等，前面文章中已经详细介绍过，这里就不再重复了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> personal website </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Personal website </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> GitHub Pages </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建个人博客网站教程-12：Hexo+GitHub Pages：解析域名</title>
+      <link href="personal-website-12/"/>
+      <url>personal-website-12/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、购买域名"><a href="#一、购买域名" class="headerlink" title="一、购买域名"></a>一、购买域名</h1><h2 id="1-1-域名购买平台简介"><a href="#1-1-域名购买平台简介" class="headerlink" title="1.1 域名购买平台简介"></a>1.1 域名购买平台简介</h2><p>可以购买域名的平台有很多，下面简要介绍4个主流的域名购买平台。</p><h3 id="1-1-1-阿里云"><a href="#1-1-1-阿里云" class="headerlink" title="1.1.1 阿里云"></a>1.1.1 阿里云</h3><p>百度搜索“阿里云”或直接通过官网（<a href="https://www.aliyun.com/%EF%BC%89%E8%BF%9B%E5%85%A5%EF%BC%9A">https://www.aliyun.com/）进入：</a><br><img src="1.png"></p><h3 id="1-1-2-腾讯云"><a href="#1-1-2-腾讯云" class="headerlink" title="1.1.2 腾讯云"></a>1.1.2 腾讯云</h3><p>百度搜索“腾讯云”或直接通过官网（<a href="https://cloud.tencent.com/%EF%BC%89%E8%BF%9B%E5%85%A5%EF%BC%9A">https://cloud.tencent.com/）进入：</a><br><img src="2.png"></p><h3 id="1-1-3-百度云"><a href="#1-1-3-百度云" class="headerlink" title="1.1.3 百度云"></a>1.1.3 百度云</h3><p>百度搜索“百度云”或直接通过官网（<a href="https://cloud.baidu.com/%EF%BC%89%E8%BF%9B%E5%85%A5%EF%BC%9A">https://cloud.baidu.com/）进入：</a><br><img src="3.png"></p><h3 id="1-1-4-GoDaddy"><a href="#1-1-4-GoDaddy" class="headerlink" title="1.1.4 GoDaddy"></a>1.1.4 GoDaddy</h3><p>百度搜索“GoDaddy”或直接通过官网（<a href="https://sg.godaddy.com/zh%EF%BC%89%E8%BF%9B%E5%85%A5%EF%BC%9A">https://sg.godaddy.com/zh）进入：</a><br><img src="4.png"></p><h2 id="1-2-购买域名"><a href="#1-2-购买域名" class="headerlink" title="1.2 购买域名"></a>1.2 购买域名</h2><p>各个平台大家可以自由选择，这里以在阿里云购买域名为例做个详细说明。<br>通过点击前面介绍的阿里云官网指定位置，可以进入如下页面：<br><img src="5.png"><br>我们在上图中指定框中输入自己想要的域名，比如这里我输入“oceanwang”并回车：<br><img src="6.png"><br>进入到上如图所示的界面之后，可以看到有非常多不同后缀的域名可以选，最主流的当然是.com这种最常见的域名后缀，这里我选择最便宜的以.top为后缀的域名<strong>oceanwang.top</strong>。先点击“加入清单”，然后点击“立即结算”，进入下图所示页面：<br><img src="7.png"><br>依次选择上图所圈出的内容，最后点击“立即购买”。后续付款流程大家自主完成即可。</p><h1 id="二、测试域名"><a href="#二、测试域名" class="headerlink" title="二、测试域名"></a>二、测试域名</h1><p>前面买的这个域名（oceanwang.top）后面会用来解析和绑定。这边先尝试用浏览器去访问一下，看看当前是什么效果。测试结果如下图所示：<br><img src="8.png"><br>意料之中：“无法访问此网站”，说明这个域名当前还是无效的。</p><h1 id="三、将“域名”映射到“GitHub-Pages”（解析域名）"><a href="#三、将“域名”映射到“GitHub-Pages”（解析域名）" class="headerlink" title="三、将“域名”映射到“GitHub Pages”（解析域名）"></a>三、将“域名”映射到“GitHub Pages”（解析域名）</h1><p>由于我的域名是在<strong>阿里云</strong>买的，所以下面将以<strong>阿里云</strong> 为例，讲解如何解析域名。<br>进入阿里云官网（<a href="https://www.aliyun.com/%EF%BC%89%E5%B9%B6%E7%99%BB%E5%BD%95%EF%BC%9A">https://www.aliyun.com/）并登录：</a><br><img src="9.png"><br>点击官网首页右上角的<strong>控制台</strong>，进入如下页面：<br><img src="10.png"><br>依次点击上图中两个位置，进入“域名列表”的页面：<br><img src="11.png"><br>点击<strong>解析</strong>后，如下图所示：<br><img src="12.png"></p><p>点击<strong>添加记录</strong>后，如下图所示：<br><img src="13.png"></p><ul><li>记录类型：选择<strong>“CNAME- 将域名指向另一个域名”</strong>；</li><li>记录值：填写自己的<strong>GitHub Pages的地址</strong>，我这里填的是<strong>“napoleon940911.github.io”</strong>；</li><li>其余：默认即可。</li></ul><p>最后点击<strong>确认</strong>，就可以看到成功新增了一条解析记录。<br><img src="14.png"></p><p>其中的<strong>主机记录</strong>系统默认帮我们选择了**@**。</p><h1 id="四、再次测试域名"><a href="#四、再次测试域名" class="headerlink" title="四、再次测试域名"></a>四、再次测试域名</h1><p>添加解析记录完成后，重新去浏览器中访问<strong>oceanwang.top</strong>，发现网页内容变了，如下图所示：<br><img src="15.png"><br><strong><em>（如果网页内容还没有任何变化，不要着急，稍等一会儿再次刷新尝试即可）</em></strong><br>从上图中我们可以看出，通过我们刚刚的域名解析设置，oceanwang.top 这个域名已经映射到我们的GitHub Pages上了。但是，还没有完全成功，还需要一些其他的操作。</p><h1 id="五、将“GitHub-Pages”映射到“域名”"><a href="#五、将“GitHub-Pages”映射到“域名”" class="headerlink" title="五、将“GitHub Pages”映射到“域名”"></a>五、将“GitHub Pages”映射到“域名”</h1><p>其实前面相当于是完成了<strong>域名</strong>到<strong>GitHub Pages</strong>的映射，接下来还需要完成 <strong>GitHub Pages</strong>到<strong>域名</strong>的映射。</p><p>进入到本地<strong>Hexo源码目录</strong>，找到<strong>source</strong>文件夹并进入，在该目录下创建一个 <strong>名为CNAME但无后缀的文件</strong>，如下图所示：<br><img src="16.png"></p><p>用Notepad++记事本等文本编辑工具打开<strong>CNAME</strong>文件，加入我们的域名<strong>oceanwang.top</strong>，如下图所示：<br><img src="17.png"></p><p>保存并退出。</p><h1 id="六、重新部署网站"><a href="#六、重新部署网站" class="headerlink" title="六、重新部署网站"></a>六、重新部署网站</h1><p>回到本地<strong>Hexo源码目录</strong>下，在空白处右击选择<strong>Git Bash Here</strong>，打开Git Bash窗口，依次执行如下3条指令，完成网站的部署：<br>hexo clean<br>hexo generate<br>hexo deploy<br>这个操作我们前面已经讲述过很多次了，这里就不再重复了。</p><p>此时，我们再去查看我们部署仓库（<a href="https://github.com/Napoleon940911/Napoleon940911.github.io%EF%BC%89%E7%9A%84settings%E4%B8%AD%E5%85%B3%E4%BA%8EGitHub">https://github.com/Napoleon940911/Napoleon940911.github.io）的settings中关于GitHub</a> Pages的描述，可以看到这里也有提示：**Your site is published at <a href="https://oceanwang.top/">https://oceanwang.top/</a> **，如下图所示。<br><img src="18.png"></p><h1 id="七、最后测试域名"><a href="#七、最后测试域名" class="headerlink" title="七、最后测试域名"></a>七、最后测试域名</h1><p>最后，我们再次重新去浏览器中访问<strong>oceanwang.top</strong>，可以发现成功变成了我们<strong>napoleon940911.github.io</strong>网址对应的内容了！<br><img src="19.png"><br><strong><em>（如果网页内容还没有任何变化，不要着急，稍等一会儿再次刷新尝试即可）</em></strong></p><p>至此，我们的<strong>域名解析</strong>工作就完成了，以后大家就可以通过自己的域名来访问自己的 <strong>个人博客网站</strong>了~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> personal website </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Personal website </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> GitHub Pages </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建个人博客网站教程-13：Hexo+GitHub Pages：增加www域名解析</title>
+      <link href="personal-website-13/"/>
+      <url>personal-website-13/</url>
+      
+        <content type="html"><![CDATA[<p>我们在完成域名解析之后，已经可以成功访问域名了，但是发现如果在域名前面加上www前缀之后，竟然就不能访问了。<br>以我自己的域名为例：oceanwang.top是可以正常访问的，但是<a href="http://www.oceanwang.top却访问不了./">www.oceanwang.top却访问不了。</a><br><img src="1.png"></p><h1 id="一、添加域名解析记录"><a href="#一、添加域名解析记录" class="headerlink" title="一、添加域名解析记录"></a>一、添加域名解析记录</h1><p>解决这个问题其实很简单，只需要再增加一条针对于www的域名解析记录即可。<br>再次进入阿里云的控制台，进到关于域名解析的页面，如下图所示：<br><img src="2.png"><br>点击<strong>添加记录</strong>，进入如下图所示页面：<br><img src="3.png"></p><ul><li>记录类型：选择<strong>“CNAME- 将域名指向另一个域名”</strong>；</li><li>主机记录：填<strong>“www”</strong>；</li><li>记录值：填写自己的<strong>GitHub Pages的地址</strong>，我这里填的是<strong>“napoleon940911.github.io”</strong>；</li><li>其余：默认即可。</li></ul><p>最后点击<strong>确认</strong>，就可以看到又成功新增了一条解析记录。<br><img src="4.png"></p><h1 id="二、测试www域名"><a href="#二、测试www域名" class="headerlink" title="二、测试www域名"></a>二、测试www域名</h1><p>完成针对于www的域名解析记录添加后，我们可以打开浏览器，输入带www前缀的域名，比如我的是<strong><a href="http://www.oceanwang.top/">www.oceanwang.top</a></strong>，然后回车，如下图所示：<br><img src="5.png"></p><p>可见，我们已经可以成功访问带www前缀的域名了！并且和原先不带www前缀的域名看到的网页是一模一样的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> personal website </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Personal website </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> GitHub Pages </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建个人博客网站教程-15：Hexo+GitHub Pages：多电脑多用户协同创作</title>
+      <link href="personal-website-15/"/>
+      <url>personal-website-15/</url>
+      
+        <content type="html"><![CDATA[<p>正在加紧更新中…</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> personal website </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Personal website </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> GitHub Pages </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
