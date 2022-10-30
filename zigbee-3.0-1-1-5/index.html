@@ -1,0 +1,1612 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="ZigBee 3.0理论教程-通用-1-05：安全加密, 拿破仑940911, Napoleon940911">
+    <meta name="description" content="安全加密">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>ZigBee 3.0理论教程-通用-1-05：安全加密 | 拿破仑940911</title>
+    <link rel="icon" type="image/png" href="/symbol.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/symbol.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">拿破仑940911</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/symbol.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">拿破仑940911</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">ZigBee 3.0理论教程-通用-1-05：安全加密</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/ZigBee-3-0/">
+                                <span class="chip bg-color">ZigBee 3.0</span>
+                            </a>
+                        
+                            <a href="/tags/Z-Stack/">
+                                <span class="chip bg-color">Z-Stack</span>
+                            </a>
+                        
+                            <a href="/tags/EmberZnet/">
+                                <span class="chip bg-color">EmberZnet</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/zigbee-3-0/" class="post-category">
+                                zigbee 3.0
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2022-01-02
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2022-10-30
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2.7k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    10 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <center>
+    <font size=4>
+        【配套<font color='red'><strong>源码</strong></font>、<font color='red'><strong>文档</strong></font>、<font color='red'><strong>软件</strong></font>、<font color='red'><strong>硬件</strong></font>等资源，请移步技术交流群：<font color='red'><strong>拿破仑ZigBee</strong></font>（263671349）】
+    </font>
+</center>
+
+<center>
+    <font size=4>
+        【所有相关<font color='red'><strong>IDE</strong></font>和<font color='red'><strong>SDK</strong></font>均可从群文件<font color='red'><strong>免费获取</strong></font>，也全都是<font color='red'><strong>免安装</strong></font>的，解压出来直接就能开始开发】
+    </font>
+</center>
+
+<p><img src="NZSA-V1.1.png"></p>
+<center>
+    <font size=5>
+        <font color='red'><strong>持续更新中，欢迎关注！</strong></font>
+    </font>
+</center>
+
+<h1 id="一、安全威胁"><a href="#一、安全威胁" class="headerlink" title="一、安全威胁"></a>一、安全威胁</h1><p>由于ZigBee是一种无线技术，因此安全性非常重要，因为黑客可以通过无线检测到这些数据包。想象您有一个智能门锁。如果黑客捕获了打开您的门的数据包，那么他可以重发该文件以打开您的门。这是很危险的。</p>
+<p><img src="Security-Threats.png"></p>
+<p>在ZigBee的网络里面，面临的两种最为典型的安全威胁：</p>
+<ul>
+<li>第一种是伪造。比如黑客捕获到无线报文，进行篡改之后，伪造一个假的报文，再发送到这个ZigBee网络中，从而去控制网络里的设备；</li>
+<li>第二种是重播。捕获到这个报文后，不进行编辑，直接重新播放一下，</li>
+</ul>
+<p>为了防止这种情况发生，ZigBee定义了许多安全功能。下面将会做简要介绍。</p>
+<h1 id="二、ZigBee安全"><a href="#二、ZigBee安全" class="headerlink" title="二、ZigBee安全"></a>二、ZigBee安全</h1><h2 id="2-1-加密流程"><a href="#2-1-加密流程" class="headerlink" title="2.1 加密流程"></a>2.1 加密流程</h2><p>APS层和网络层的加密流程，如下图所示：  </p>
+<p><img src="APS-NWK-Security-0.png"></p>
+<p>它显示了如何在网络层中保护不安全的网络帧：首先，网络有效负载将被加密。之后，将在加密的有效负载之前添加安全标头。然后根据网络标头，安全标头和加密的有效负载来计算哈希值。最后，将32位哈希值附加到帧的末尾。如果更改了网络标头，安全标头和加密的有效负载中的任何字节，则哈希值将不同。我们将此值称为MIC（mandatory integrity control），是消息完整性检查的缩写。</p>
+<h2 id="2-2-加密算法"><a href="#2-2-加密算法" class="headerlink" title="2.2 加密算法"></a>2.2 加密算法</h2><p><img src="APS-NWK-Security-1.png"></p>
+<p>APS层和网络层的两个加密环节使用的都是AES128对称加密算法，这意味着需要使用相同的密钥进行加密和解密。</p>
+<h2 id="2-3-完整性检查"><a href="#2-3-完整性检查" class="headerlink" title="2.3 完整性检查"></a>2.3 完整性检查</h2><p><img src="APS-NWK-Security-2.png"></p>
+<h2 id="2-4-重播攻击保护"><a href="#2-4-重播攻击保护" class="headerlink" title="2.4 重播攻击保护"></a>2.4 重播攻击保护</h2><p><img src="APS-NWK-Security-3.png"></p>
+<p>添加了帧计数器以防止重发攻击。让我们看看它是如何工作的。</p>
+<p><img src="Frame-Counter.png"></p>
+<p>在发送方</p>
+<ul>
+<li>每发送一次Frame Counter的值都需要增加1；</li>
+<li>Frame Counter的值需要保存在non-volatile memory中，便于重启后恢复Frame Counter。</li>
+</ul>
+<p>在接收方</p>
+<ul>
+<li>首先，将记录接收到帧的节点的Eui64和Frame Counter的值；</li>
+<li>来自同一节点的下一条消息的Frame Counter必须大于记录的Frame Counter值。如果此次的Frame Counter比上一次的小或者相等，该消息都将被视为重发并将被丢弃；</li>
+<li>由于资源有限，接收方只保存所有邻居的Frame Counter。</li>
+</ul>
+<p>由于Frame Counter是一个32位值，因此如果设备长时间保持运行状态，它可能会自动溢出。显然，如果帧计数器被覆盖，可能会出现问题。为防止这种情况发生，必须在溢出之前更新Network Key。如果更新了Network Key，帧计数器则可以再次从零开始。</p>
+<p>对于End Device来说，它通常只需要保存其父节点的Frame Counter即可。</p>
+<h1 id="三、APS层安全"><a href="#三、APS层安全" class="headerlink" title="三、APS层安全"></a>三、APS层安全</h1><h2 id="3-1-总览"><a href="#3-1-总览" class="headerlink" title="3.1 总览"></a>3.1 总览</h2><p>在APS层用来加密的密钥被称为Link key。在ZigBee网络中，虽然APS层和网络层都有加密，但是绝大部分通信都只是在网络层的加密。<br>一般来说，只有在传输Network Key的时候需要在应用层被加密，并且这仅在Trust Center和新设备之间发生。因此，在这种情况下，我们也将其称为Trust Center Link key。</p>
+<p>新设备和Trust Center之间必须要在组网之前就使用哪一个Link Key达成共识，所以新设备和Trust Center之间是不需要一个Link Key的传输过程的。</p>
+<p>网络中的设备可以使用相同的Link key或不同的Link key，只要新设备和Trust Center之间达成共识即可。</p>
+<p>一般来说有四种Link Key，但是我们以前两种为主。后两种目前可能用得很少了，这里仅作简要描述，不做深入探讨。</p>
+<h2 id="3-2-四种类型的Link-Key"><a href="#3-2-四种类型的Link-Key" class="headerlink" title="3.2 四种类型的Link Key"></a>3.2 四种类型的Link Key</h2><h3 id="3-2-1-Default-Global-Trust-Center-Link-Key"><a href="#3-2-1-Default-Global-Trust-Center-Link-Key" class="headerlink" title="3.2.1 Default Global Trust Center Link Key"></a>3.2.1 Default Global Trust Center Link Key</h3><p>又被称为the well-known link key，其内容如下：</p>
+<p>Default global Trust Center link key (0:15) = 0x5a 0x69 0x67 0x42 0x65 0x65 0x41 0x6c 0x6c 0x69 0x61 0x6e 0x63 0x65 0x30 0x39</p>
+<p>其实就是字符串“ <strong>ZigBeeAlliance09</strong> ”。这个是在ZigBee 3.0之前就一直在广泛使用的一个相同的默认的密钥，如今得以保留主要是为了保持向后的兼容性。</p>
+<p>所有的ZigBee设备都会有这个Default Global Trust Center Link Key。如果没有指定其他的link key的话，Default Global Trust Center Link Key就是设备在入网过程中第一个被尝试使用的密钥。</p>
+<p>如果希望能保证和其他的ZigBee 3.0的设备之间互联互通的话，这个密钥时不能改变的。</p>
+<h3 id="3-2-2-Install-Code-Derived-Preconfigured-Link-Key"><a href="#3-2-2-Install-Code-Derived-Preconfigured-Link-Key" class="headerlink" title="3.2.2 Install Code Derived Preconfigured Link Key"></a>3.2.2 Install Code Derived Preconfigured Link Key</h3><p><img src="Install-Code-to-Key.png"></p>
+<p>Install Code并不是一个Key，而是一个Key的输入。Install Code是16字节多项式+ 2字节CRC，再通过固定的算法，计算可以得出Link Key。这种Link Key的传输是由人工来完成的，Install Code的实际应用场景如下图所示：</p>
+<p><img src="Install-Code.png"></p>
+<ul>
+<li>首先，在产品生产的时候，由厂家在产线随机生成一个Install Code；</li>
+<li>然后将这个Install Code烧录到产品里面；</li>
+<li>然后把这个Install Code和Eui64打到标签上面，贴在这个产品表面；</li>
+<li>在安装的时候，安装人员利用手持设备的扫描功能，从产品标签上扫描获取Install Code和Eui64；</li>
+<li>将获取到的Install Code和Eui64告诉Trust Center（一般是协调器）；</li>
+<li>然后在Trust Center上通过这个Install Code得到Link Ley，让Trust Center知道IEEE地址为Eui64的这个新设备必须使用这个Link Key进行组网；</li>
+<li>待入网的新设备这边，从flash中读取出预先烧录的Install Code，然后使用相同的算法得出Link key。</li>
+</ul>
+<p>待入网的新设备这边计算得出的Link Key应与Trust Center端的派生Link Key相同。这样，即使消息已加密，他们也可以在应用程序层进行通信。接下来就开始组网的过程了。</p>
+<p>An Install Code is a sequence of 16 bytes followed by 2 bytes of CRC. A complete 18 bytes sequence is needed to generate a unique TCLK. The usage of install codes defined in Z3.0 was added to allow a generalized out-of-band key delivery method for network commissioning. It works as follows:</p>
+<ol>
+<li>TC gets the install code and the 64-bit IEEE address of the device that will use this install code to join, via any user interface (serial, display and switches, etc.). The install code must be physically provided with the joining device.</li>
+<li>TC validates the CRC of the install code introduced. If this is valid then a TCLK entry is added into the TC with the derived key and the address of the corresponding device.</li>
+<li>The joining device is instructed to use its install code to generate the corresponding TCLK.</li>
+<li>The network is open by any means.</li>
+<li>The joining device performs association and the Trust Center delivers the network key encrypted in APS layer with the install code derived key.</li>
+<li>After this, the joining device must perform the update of its TCLK as BDB specification requires.</li>
+</ol>
+<p>For further details on how to generate the install codes, see the Base Device Specification [7]. This is supported only by R21 or later revisions, so to allow backwards compatibility the application must have a way to attempt joining networks without the usage of Install Codes.</p>
+<h3 id="3-2-3-Distributed-Security-Global-Link-Key"><a href="#3-2-3-Distributed-Security-Global-Link-Key" class="headerlink" title="3.2.3 Distributed Security Global Link Key"></a>3.2.3 Distributed Security Global Link Key</h3><p>在Distributed Security Network中，没有Trust Center，每个Router都可以分发 network key。</p>
+<p>由Router父节点向新入网设备分发的network key，在APS层是使用Distributed Security Global Link Key进行加密的。</p>
+<p>如果希望能保证和其他的ZigBee 3.0的设备之间互联互通的话，这个密钥时不能改变的。</p>
+<p>Distributed Security Global Link Key (0:15) = 0xd0 0xd1 0xd2 0xd3 0xd4 0xd5 0xd6 0xd7 0xd8 0xd9 0xda 0xdb 0xdc 0xdd 0xde 0xdf</p>
+<h3 id="3-2-4-Touchlink-Preconfigured-Link-Key"><a href="#3-2-4-Touchlink-Preconfigured-Link-Key" class="headerlink" title="3.2.4 Touchlink Preconfigured Link Key"></a>3.2.4 Touchlink Preconfigured Link Key</h3><p>如果新设备是要通过touchlink的方式进行组网的话，就需要使用Touchlink Preconfigured Link Key。</p>
+<p>Touchlink Preconfigured Link Key (0:15) = 0xc0 0xc1 0xc2 0xc3 0xc4 0xc5 0xc6 0xc7 0xc8 0xc9 0xca 0xcb 0xcc 0xcd 0xce 0xcf</p>
+<h1 id="四、网络层安全"><a href="#四、网络层安全" class="headerlink" title="四、网络层安全"></a>四、网络层安全</h1><h2 id="4-1-总览"><a href="#4-1-总览" class="headerlink" title="4.1 总览"></a>4.1 总览</h2><p>该密钥称为Network Key。由于它是一种对称加密算法，因此同一ZigBee网络中的所有设备都将使用相同的Network Key。</p>
+<p>在网络安全标头中，添加了“帧计数器”的字段和加密信息节点的源Eui64，以防止重发攻击。还添加了密钥序列号以支持Network Key更新。</p>
+<h2 id="4-2-逐跳安全"><a href="#4-2-逐跳安全" class="headerlink" title="4.2 逐跳安全"></a>4.2 逐跳安全</h2><p><img src="Hop-by-Hop-vs-End-to-End.png"></p>
+<p>APS层的安全性，是<strong>端到端</strong>安全性。在APS层，是节点A加密好了之后一直得等到达目的地（节点C）之后才去解密。这中间的加密/解密密钥（Link Key）只要A和C两个知道，B不知道这个密钥，不能去进行加密解密，所以B不关心通信的内容。在这种情况下，我们可以有很多的Link Key，只要通信的双方知道即可。</p>
+<p>网络层的安全性，是逐跳安全性。A加密好了在发给C的过程中要经过B，B收到这个报文后要先解密再加密，加密完了之后再发给下一跳。由于所有的中间节点都要参与解密和重新加密的过程，所以所有的节点都必须使用相同的Network Key。</p>
+<p><img src="Hop-by-Hop-Security.png"></p>
+<p>路由器节点需要解密该消息，然后对其进行加密，然后替换安全标头中的信息，再将其发送出去。如果解密失败，该消息将立即被丢弃。</p>
+<p>这样的好处是可以尽快丢弃攻击消息。</p>
+<h2 id="4-3-Network-Key"><a href="#4-3-Network-Key" class="headerlink" title="4.3 Network Key"></a>4.3 Network Key</h2><p>Network Key是一个16字节的八位位组。通常，它是在网络创建时由协调器随机生成的。当新设备加入网络时，它们必须获得Network Key的副本。</p>
+<p>在ZigBee网络中，将Network Key分发给新设备的角色称为Trust Center。有两种典型的安全模型，即集中式安全网络和分布式安全网络。</p>
+<p><img src="Security-Model.png"></p>
+<p>在集中式安全网络中，只有一个Trust Center，通常是协调器。所有新设备将从协调器获取Network Key。<br>在分布式安全网络中，没有一个固定的Truster Center，也就是说每个路由器都是一个Trust Center。新设备可以从每个路由器父节点那里获取Network Key。</p>
+<p>Distributed Security Model目前主要就是在飞利浦的Touch Link上在使用。ZigBee 3.0中最主要的还是Centralized Security Model的模式。</p>
+<p>由于需要将Network Key从一个设备传输到另一台设备，因此在传输过程中需要对密钥值进行加密。此加密在应用程序层中完成。我们稍后再讨论。</p>
+<p>&nbsp;</p>
+<center>
+    <font size=5>
+        <font color='red'><strong>持续更新中，欢迎关注！</strong></font>
+    </font>
+</center>
+
+<p>&nbsp;</p>
+<p><img src="%E6%8B%BF%E7%A0%B4%E4%BB%91ZigBee.jpg"></p>
+<center>
+    <font size=4>
+        【所有相关<font color='red'><strong>IDE</strong></font>和<font color='red'><strong>SDK</strong></font>均可从群文件<font color='red'><strong>免费获取</strong></font>，也全都是<font color='red'><strong>免安装</strong></font>的，解压出来直接就能开始开发】
+    </font>
+</center>
+
+<center>
+    <font size=4>
+        【配套<font color='red'><strong>源码</strong></font>、<font color='red'><strong>文档</strong></font>、<font color='red'><strong>软件</strong></font>、<font color='red'><strong>硬件</strong></font>等资源，请移步技术交流群：<font color='red'><strong>拿破仑ZigBee</strong></font>（263671349）】
+    </font>
+</center>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">拿破仑940911</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://oceanwang.top/zigbee-3.0-1-1-5/">https://oceanwang.top/zigbee-3.0-1-1-5/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">拿破仑940911</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/ZigBee-3-0/">
+                                    <span class="chip bg-color">ZigBee 3.0</span>
+                                </a>
+                            
+                                <a href="/tags/Z-Stack/">
+                                    <span class="chip bg-color">Z-Stack</span>
+                                </a>
+                            
+                                <a href="/tags/EmberZnet/">
+                                    <span class="chip bg-color">EmberZnet</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_npl_removebg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'PlwpEfLxVJtO0VQH6nM2mCI8-gzGzoHsz',
+        appKey: 'dmysc9L6xo4YPPYsR97FoKbN',
+        notify: 'true' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'mm',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: '欢迎评论交流~'
+    });
+</script>
+
+<!--酷Q推送-->
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/zigbee-3.0-1-1-6/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/33.jpg" class="responsive-img" alt="ZigBee 3.0理论教程-通用-1-06：建网与组网">
+                        
+                        <span class="card-title">ZigBee 3.0理论教程-通用-1-06：建网与组网</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            建网与组网
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-02
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/zigbee-3-0/" class="post-category">
+                                    zigbee 3.0
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/ZigBee-3-0/">
+                        <span class="chip bg-color">ZigBee 3.0</span>
+                    </a>
+                    
+                    <a href="/tags/Z-Stack/">
+                        <span class="chip bg-color">Z-Stack</span>
+                    </a>
+                    
+                    <a href="/tags/EmberZnet/">
+                        <span class="chip bg-color">EmberZnet</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/zigbee-3.0-1-1-4/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="ZigBee 3.0理论教程-通用-1-04：ZCL规范与Cluster">
+                        
+                        <span class="card-title">ZigBee 3.0理论教程-通用-1-04：ZCL规范与Cluster</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ZCL规范与Cluster
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-02
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/zigbee-3-0/" class="post-category">
+                                    zigbee 3.0
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/ZigBee-3-0/">
+                        <span class="chip bg-color">ZigBee 3.0</span>
+                    </a>
+                    
+                    <a href="/tags/Z-Stack/">
+                        <span class="chip bg-color">Z-Stack</span>
+                    </a>
+                    
+                    <a href="/tags/EmberZnet/">
+                        <span class="chip bg-color">EmberZnet</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2022</span>
+            
+            <a href="/about" target="_blank">拿破仑940911</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">45.6k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2021";
+                        var startMonth = "1";
+                        var startDate = "25";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'zh-CN';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Napoleon940911" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1813275534@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1813275534" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1813275534" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
